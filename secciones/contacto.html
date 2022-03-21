@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/e69c34289d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Contacto</title>
+</head>
+
+<body>
+	<div class="contenedorContacto">
+	<!-- LOGO y BARRA DE NAVEGACIÓN -->
+		<nav class="nav">	
+			<a href="../index.html"><img src="../assets/logoPSH.svg" alt="Logo Palo Santo Hotel" class="logo"></a>
+			<ol class="textUpper">
+				<li>
+					<a href="../index.html" id="home">Home</a>
+				</li>
+				<li>
+					<a href="info.html">Info práctica</a>
+				</li>
+				<li>
+					<a href="recomendaciones.html">Recomendaciones</a>
+				</li>
+				<li>
+					<a href="sustentabilidad.html">Sustentabilidad</a>
+				</li>
+				<li>
+					<a href="contacto.html">Contacto</a>
+				</li>
+			</ol>
+		</nav>	
+
+		<!-- Header - Foto y título -->
+		<header class="header">
+			<img src="../assets/patio-noche.jpg" alt="patio del hotel iluminado">
+			<h1 class="textUpper titulo--xxl">Contacto</h1>
+		</header>
+
+		<!-- Formulario de contacto  -->
+		<main class="mainContacto">
+			<article>
+				<h2 class="titulo--sm">Por favor, dejanos aquí tu consulta, te responderemos a la brevedad:</h2>
+				<form action="" method="POST">
+					<div class="formQuestion">
+						<p>¿Estás alojado en este momento en el hotel?</p>
+						<div>
+							<input type="radio" id="huesped" value="in-house"/>
+							<label for="huesped">Sí</label>
+							<input type="radio" id="no-huesped" value="no-huesped"/>
+							<label for="huesped">No</label>
+						</div>
+					</div>
+					
+					<div class="formQuestion">
+						<label for="motivo">¿Cuál es el motivo de tu consulta?</label>
+						<select id="motivo" name="motivo">
+							<option value="transfer">Reservar un transfer</option>
+							<option value="reserva">Realizar o modificar una reserva</option>
+							<option value="problema">Problema con mi habitación</option>
+							<option value="conserjeria">Consulta de conserjería</option>
+						</select>
+					</div>
+					
+					<div class="formQuestion">
+						<label for="nombre">Nombre y apellido:	</label>	
+						<input type="text" name="nombre" placeholder="Juan Pérez"/>
+					</div>
+					
+					<div class="formQuestion">
+						<label for="email">Tu email:</label>	
+						<input type="email" name="email" placeholder="juan@gmail.com"/>
+					</div> 
+					
+					<div>
+						<legend>Tu mensaje:</legend>
+						<textarea rows="5" class="textArea">Dejanos tu consulta</textarea> 
+					</div>
+					
+					<input class="boton botonYellow" type="submit" value="Enviar consulta"/>	
+					<input class="boton botonReset" type="reset" value="Borrar formulario"/>
+				</form>
+			</article>
+		</main>
+
+			<!-- Google Maps -->
+		<section class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9966758776045!2d-58.43430474820341!3d-34.57895066360113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5911aef258b%3A0x6dbe6b19813c454c!2sPalo%20Santo%20Hotel!5e0!3m2!1ses-419!2suy!4v1645617894544!5m2!1ses-419!2suy"allowfullscreen="" loading="lazy"></iframe>
+		</section>
+			
+
+		<!-- Footer con redes sociales y datos WiFi -->
+		<footer class ="footer textWhite bgDark">
+			<div class="wifi">
+				<i class="fa-solid fa-wifi"></i>
+				<span class="textUpper">Red</span>: Palo Santo / <span class="textUpper">Contraseña</span>: bonpland
+			</div>
+			<div class="redes">
+				<a href="https://www.facebook.com/PaloSantoHotel" target="_blank">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				<a href="https://www.instagram.com/palosantohotel" target="_blank">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="https://www.tripadvisor.es/Hotel_Review-g312741-d6609346-Reviews-Palo_Santo_Hotel-Buenos_Aires_Capital_Federal_District.html" target="_blank">
+					<img src="../assets/tripadvisor-icon.png" alt="Palo Santo en TripAdvisor">
+				</a>
+			</div>
+		</footer>	
+	</div>
+</body>
+</html>

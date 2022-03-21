@@ -1,0 +1,803 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Estilos generales */
+
+*{
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size:  62.5%;
+}
+
+body{
+	font-size: 2rem;
+	line-height: 3rem;
+	color:  #212A31;
+}
+
+a{
+	color:  #212A31;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5{
+	margin-bottom: 3rem;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+/*********************
+  Barra de navegación
+**********************/
+
+.nav{
+	grid-area: nav;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.nav ol{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 2rem	;
+	}
+
+		.nav ol li{
+			font-size: 1.6rem;
+			margin: 0 0.8rem;
+			padding: 0;
+		}
+
+			.nav ol li a{
+				font-weight: 300;
+				color: black;
+			}
+
+			.nav ol li a:hover{
+				color: #F1BD13;
+			}
+
+.logo{
+	margin: 2rem 0;
+	background-color: white;
+}
+
+/*****************
+  Footer
+******************/
+.footer{
+	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0;
+	font-size: 1.6rem;
+}
+
+.redes{
+	margin-top: 1rem;
+}
+
+	.redes a i{
+			margin: 0 15px;
+			color: white;
+			height: 30px;
+		}
+
+	.redes a img{
+			margin: 0 15px;
+			height: 16px;
+		}
+
+/***********************************************************
+  Estilos de header
+  Para páginas Contacto - Recomendaciones - Green
+************************************************************/
+.header{
+	grid-area: header;
+}
+
+	.header img{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.header h1{
+		text-align: center;
+	}
+
+/*************************
+  Estilos de botones
+**************************/
+
+.boton{
+	padding: 1rem 3rem;
+	border: none;
+}
+
+	.boton:hover{
+		font-weight: 700;
+	}
+
+	.boton a{
+		color: #212A31;;
+	}
+	
+.botonYellow{
+	background-color: #F1BD13;
+}
+
+	.botonYellow:hover{
+		background-color: #E7B11E;	
+	}
+
+.botonReset{
+	background-color: whitesmoke;
+}
+
+	.botonReset:hover{
+		background-color: #c6c6c6;
+}
+
+/*****************
+  Estilos de texto 
+******************/
+
+.textUpper{	
+	text-transform: uppercase;
+}
+
+.textWhite{
+	color: whitesmoke;
+}
+
+.bgDark{
+	background-color: #212A31;
+}
+
+.titulo--xxl{
+	font-weight: 400;
+	font-size: 3.2rem;
+	line-height: 4rem;
+}
+
+.titulo--xl{
+	font-weight: 300;
+	font-size: 2.5rem;
+}
+
+.titulo--md	{
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.titulo--sm	{
+	font-weight: 300;
+	font-size: 2.2rem;
+}
+
+/*************************
+  Estilos de contenedores
+**************************/
+.imageBoxDark{
+	width: 97%;
+	background-color: #212A31;
+	color: whitesmoke;
+	text-align: center;
+	padding: 3rem;
+}
+
+.imageBoxWhite{
+	width: 97%;
+	color: #212A31;
+	text-align: center;
+	padding: 3rem;
+}
+
+	.imageBoxDark img, .imageBoxWhite img{
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+
+	.imageBoxDark h2, .imageBoxDark h3{
+		color: #F1BD13;
+	}
+
+	.imageBoxDark p, .imageBoxDark ol, .imageBoxWhite p, .imageBoxWhite ol{
+		font-weight: 300;
+	}
+
+	.imageBoxDark a{
+		color: whitesmoke;
+		text-decoration: underline;
+	}
+
+	.imageBoxWhite a{
+		color: #404952;
+		text-decoration: underline;
+	}
+
+
+/*****************
+	Homepage
+******************/
+
+.contenedorHome{
+	display: grid;
+	grid-template-areas: "nav" "mainHome" "footer";
+}
+
+#home{
+	display: none;
+}
+
+.mainHome{
+	grid-area: mainHome;
+}
+
+.homeImage img{
+	width: 100%;
+}
+
+.homeTitle{
+	text-align: center;
+}
+
+	.homeTitle h1{
+		margin: 2rem 0;
+	}
+
+	.homeTitle h2{
+		margin: 2rem 0;
+	}
+
+.botonHome{
+	font-size: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+
+/*****************
+	Página Info
+******************/
+
+.contenedorInfo{
+	display: grid;
+	grid-template-areas: "nav" "header" "contenidoInfo" "descargas" "footer";
+}
+
+.introInfo{
+	padding: 4rem;
+	margin: 1rem;
+	border: 5px solid #212A31;
+	text-align: center;
+}
+
+	.introInfo span{
+		font-weight: 700;
+	}
+
+.mainInfo{
+	grid-area: mainInfo;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.contenedorInfoSecondario{
+	grid-area: contenidoInfo;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#horarios table{
+	font-weight: 300;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#horarios tr{
+	height: 7rem;
+	border-bottom: 0.5px solid whitesmoke;
+}
+
+.horariosCol1{;
+	text-align: left;
+}
+
+.horariosCol2{
+	text-align: right;
+}
+
+#nofumar{
+	grid-area: nofumar;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4rem;
+	padding: 4rem;
+	border-top: 0.5px solid #212A31;
+	border-bottom: 0.5px solid #212A31;
+}
+
+	#nofumar i{
+		margin-bottom: 3rem;
+	}
+
+	#nofumar h2{
+		text-align: center;
+	}
+
+#servicios{
+	grid-area: servicios;
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
+}
+
+		#servicios ol li{
+			margin: 2rem 0;
+		}
+
+.descargas{
+	grid-area: descargas;
+	width: 97%;
+	margin: 3rem auto;
+}
+
+	.descargas a{
+		color: #212A31;
+	}
+
+	.descargas h2{
+		text-align: center;
+	}
+	
+	.descargas ol{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+		.descargas ol li{
+			flex-basis: 0;
+			flex-grow: 1;
+		}
+
+			.descargas ol li a{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				text-align: center;
+			}
+
+			.descargas ol a i{
+				margin-bottom: 2rem;
+			}
+
+
+/*****************
+  Página Sustentabilidad
+******************/
+
+.contenedorGreen{
+	display: grid;
+	grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer";
+}
+
+.introGreen{
+	grid-area: introGreen;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mainGreen{
+	grid-area: mainGreen;
+	width: 97%;
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+	.mainGreen div article{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-bottom: 3rem;
+	}
+
+		.mainGreen div article h3{
+			border-top: 0.5px #F1BD13 solid;
+			border-bottom: 0.5px #F1BD13 solid;	
+			padding: 1.5rem 0;
+		}
+
+		.mainGreen div article img{
+			width: 60%;
+			margin-bottom: 2rem;
+		}
+
+			.mainGreen div article p{
+				margin-top: 2rem;
+			}
+
+				.mainGreen div article p a{
+					color: #212A31;
+					padding-bottom: 0.3rem;
+					border-bottom: 0.5px #212A31 solid;	
+				}
+
+.navGreen ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	flex-wrap: wrap;
+}
+	.navGreen ul li{
+		margin-right: 2rem;
+		margin-top: 0.5rem;
+	}
+
+.asideGreen{
+	grid-area: asideGreen;
+	margin-bottom: 3rem;
+	border: 5px solid #212A31;
+	padding: 2rem;
+}
+
+/*************************
+  Página Recomendaciones
+**************************/
+
+.contenedorReco{
+	display: grid;
+	grid-template-areas: "nav" "header" "mainReco" "footer";
+}
+
+.mainReco h2{
+	text-align: center;
+}
+
+.restaurante{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.restauranteImg{
+		width: 60%;	
+	}
+
+.datosReco{
+	margin-top: 2rem;
+	text-align: left;
+	font-size: 1.7rem;
+}
+
+/*****************
+  Página Contacto
+******************/
+
+.contenedorContacto{
+	display: grid;
+	grid-template-areas: "nav" "header" "mainContacto" "mapa" "footer";
+}
+
+.mainContacto{
+	grid-area: mainContacto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	font-weight: 300;
+	margin-bottom: 3rem;
+}
+
+	.mainContacto h2{
+		padding: 2rem 0;
+		border-top: 0.5px solid #212A31;
+		border-bottom: 0.5px solid #212A31;
+		text-align: center;
+	}
+	
+.mapa{
+	grid-area: mapa;
+	margin-bottom: 3rem;
+}
+
+	.mapa iframe{
+		width: 100%;
+		height: 50vh;
+		border-width: 0;
+	}
+
+.mainContacto article form div{
+	margin-bottom: 2rem;
+}
+
+.textArea{
+	margin-top: 1rem;
+	width: 97%;
+	padding: 1rem;
+}
+
+
+/*****************
+  Media Queries
+******************/
+
+/* ipad */
+
+@media only screen and (min-width: 768px){
+	.imageBoxDark img, .imageBoxWhite img{
+		width: 75%;
+	}
+
+	/* Nav - Vuelve a aparecer el ítem Home en Tablets y Desktops */
+	#home{
+		display: block;
+	}
+
+	/* Footer en una sola línea */
+	.footer{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 4rem;
+	}
+
+	/* Página INFO */
+	.mainInfo{
+		flex-direction: row;
+		flex-basis: 0;
+	}
+
+	#horarios{
+		flex-grow: 3;
+		margin-right: 3rem;
+	}
+
+	#nofumar{
+		flex-grow: 1;
+		border: none;
+	}
+
+	/* Página Recomendaciones */
+
+	.restaurante{
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+
+	.restauranteImg{
+		width: 50%;	
+	}
+
+	.restauranteTxt{
+		width: 50%;	
+		text-align: left;
+	}
+
+	/* Página Contacto */
+
+	.formQuestion{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+		.formQuestion label, select, input{
+			margin-right: 2rem;
+		}
+
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1024px){
+	/* Nav */
+	.nav{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 4rem;
+	}
+
+		.nav ol li{
+			margin: 0 2rem;
+		}
+
+	.logo{
+		padding-left: 0;
+	}
+
+	/* Homepage */
+	.mainHome{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		border: 0.5px solid #212A31;
+	}
+
+	.homeTitle{
+		width: 35%;
+		text-align: left;
+		margin-left: 4rem;
+		margin-right: 4rem;
+		padding-left: 0;
+	}
+
+		.homeTitle h1{
+			line-height: 6rem;
+			margin-bottom: 4rem;
+		}
+
+		.homeTitle h2{
+			margin-bottom: 4rem;
+		}
+
+	.homeImage{
+		width: 65%;
+		margin-bottom: 0;
+	}
+
+	/* Página info */
+	.contenedorInfo{
+		grid-template-areas: "nav nav"	
+							 "header header"
+							 "contenidoInfo descargas"
+							 "footer footer";
+		grid-template-columns: 5fr 1fr;	
+	}
+
+	#horarios{
+		width: 40%	;
+	}
+
+	#nofumar{
+		width: 30%;
+	}
+	.mainInfo{
+		align-items: flex-start;
+		margin-right: 2rem;
+		margin-left: 2rem;
+		width: 97%;
+	}
+
+	#servicios{
+		flex-direction: row;
+		margin-left: 1rem;
+	}
+
+		#servicios img{
+			margin-bottom: 1rem;
+		}
+
+	.descargas{
+		background-color: #fdf8e7;
+		padding: 2rem;
+		margin: 3rem 2rem 0 0;
+	}
+
+	.descargas ol{
+		flex-direction: column;
+	}
+
+		.descargas ol li a{
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: 2rem;
+		}
+
+	/* Página Sustentabilidad */
+	.contenedorGreen{
+		grid-template-areas: "nav nav"
+							 "header header"
+							 "introGreen asideGreen"
+							 "mainGreen mainGreen"
+							 "footer footer";
+		grid-template-columns: 3fr 1fr;
+	}
+
+	.introGreen{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.introGreenImg{
+		width: 50%;
+		margin-bottom: 0;
+	}
+
+	.introGreenTxt{
+		width: 50%;
+	}
+
+	#accionesGreen{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-start;
+		column-gap: 3rem;
+	}
+
+		#accionesGreen article{
+			width: 45%;
+		}
+
+	.backtoTop{
+		display: none;
+	}
+	
+
+	.asideGreen{
+		margin-bottom: 0;
+	}
+
+	/* Página contacto */
+	.contenedorContacto{
+		grid-template-areas: "nav nav"
+							 "header header"
+							 "mapa mainContacto"
+							 "footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 3rem;
+	}
+
+	.mapa iframe{
+		height: 100%;
+	}
+
+	/* Página Recomendaciones */
+	.restaurante{
+		flex-direction: column;
+	}
+
+	.listaRestaurantes .imageBoxDark, .listaRestaurantes .imageBoxWhite{
+		margin: 2rem;
+		border: 1px solid;
+	}
+
+	.restauranteImg, .restauranteTxt{
+		width: 100%;
+	}
+
+	.listaRestaurantes{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.restaurantBox{
+		width: 30%;
+	}
+
+	/* Footer */
+
+	#footerHome{
+		margin-top: -1rem;
+	}
+
+	.footer{
+		margin-top: 3rem;
+	}
+}
