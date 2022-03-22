@@ -276,10 +276,6 @@ ol, ul{
 	grid-area: mainHome;
 }
 
-.homeImage img{
-	width: 100%;
-}
-
 .homeTitle{
 	text-align: center;
 }
@@ -292,7 +288,24 @@ ol, ul{
 		margin: 2rem 0;
 	}
 
+/* Carusel fotos header */
+.homeImage{
+	height: 50vh;
+	animation-name: animateHeader;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	background-size: cover;
+	background-position: center;
+}
 
+@keyframes animateHeader{
+	0%{background-image: url(../assets/pileta.jpg)}
+	33%{background-image: url(../assets/restaurante.jpg)}
+	66%{background-image: url(../assets/patio-noche.jpg)}
+	100%{background-image: url(../assets/cascada.jpg)}	
+}
 
 /*****************
 	Página Info
@@ -665,7 +678,7 @@ ol, ul{
 	}
 
 	.homeTitle{
-		width: 35%;
+		width: 30%;
 		text-align: left;
 		margin-left: 4rem;
 		margin-right: 4rem;
@@ -682,7 +695,8 @@ ol, ul{
 		}
 
 	.homeImage{
-		width: 65%;
+		width: 70%;
+		height: 65vh;
 		margin-bottom: 0;
 	}
 
