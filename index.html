@@ -6,9 +6,17 @@
 	<script src="https://kit.fontawesome.com/e69c34289d.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- AOS Animations -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 	<title>Bienvenido a Palo Santo</title>
 </head>
 <body>
+	<script>
+  		AOS.init();
+	</script>
 	<!-- LOGO y BARRA DE NAVEGACIÓN -->
 	<div class="contenedorHome">
 		<header>
@@ -43,7 +51,7 @@
 			<section class="homeTitle">
 				<h1 class="titulo--xxl textUpper">¡Gracias por estar con nosotros!</h1>
 				<h2 class="titulo--xl">estamos muy felices de recibirte</h2>
-				<button type="button" class="textUpper boton botonYellow botonHome"><a href="secciones/info.html">Entrar</a></button>
+				<button type="button" class="textUpper btn-grad botonHome" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500"><a href="secciones/info.html" data-wow-delay="0.5s">Entrar</a></button>
 			</section>
 		</main>
 
