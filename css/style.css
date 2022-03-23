@@ -96,7 +96,11 @@ ol, ul{
 
 	.redes a img{
 			margin: 0 15px;
-			height: 16px;
+			height: 14px;
+		}
+
+			.redes a i:hover, .redes a img:hover{
+			transform: scale(1.3);
 		}
 
 /***********************************************************
@@ -122,32 +126,61 @@ ol, ul{
 
 .boton{
 	padding: 1rem 3rem;
-	border: none;
+	
 }
 
 	.boton:hover{
-		font-weight: 700;
+
 	}
 
-	.boton a{
+/*	.boton a{
 		color: #212A31;;
-	}
+	}*/
 	
 .botonYellow{
 	background-color: #F1BD13;
+
 }
 
 	.botonYellow:hover{
 		background-color: #E7B11E;	
 	}
 
-.botonReset{
-	background-color: whitesmoke;
+.btn-grad, .btn-grad-reset{
+	border: none;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;         
+  box-shadow: 0 0 20px #eee;
+  border-radius: 0.3rem;
+  display: inline-block;
+  width: 40%;
+  color: #212A31; 
+	white-space: normal;
+	word-wrap: break-word;
 }
 
-	.botonReset:hover{
-		background-color: #c6c6c6;
+.btn-grad {background-image: linear-gradient(to right, #f1bd13 0%, #f8ca38  51%, #ffd753  100%)}
+	
+.btn-grad-reset {background-image: linear-gradient(to right, #cccccc 0%, #e0e0e0  51%, #f5f5f5  100%)}
+
+	.btn-grad-reset:hover, .btn-grad:hover {
+	  background-position: right center; /* change the direction of the change here */	
+	  text-decoration: none;
+	  font-weight: 700;
+	}	
+
+.botonHome{
+	font-size: 3rem;
+	margin-left: 0;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+	width: 70%;
 }
+
 
 /*****************
   Estilos de texto 
@@ -245,10 +278,6 @@ ol, ul{
 	grid-area: mainHome;
 }
 
-.homeImage img{
-	width: 100vw;
-}
-
 .homeTitle{
 	text-align: center;
 }
@@ -261,12 +290,24 @@ ol, ul{
 		margin: 2rem 0;
 	}
 
-.botonHome{
-	font-size: 3rem;
-	margin-top: 2rem;
-	margin-bottom: 4rem;
+/* Carusel fotos header */
+.homeImage{
+	height: 50vh;
+	animation-name: animateHeader;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	background-size: cover;
+	background-position: center;
 }
 
+@keyframes animateHeader{
+	0%{background-image: url(../assets/pileta.jpg)}
+	33%{background-image: url(../assets/restaurante.jpg)}
+	66%{background-image: url(../assets/patio-noche.jpg)}
+	100%{background-image: url(../assets/cascada.jpg)}	
+}
 
 /*****************
 	Página Info
@@ -443,7 +484,7 @@ ol, ul{
 					border-bottom: 0.5px #212A31 solid;	
 				}
 
-.navGreen ul{
+.navGreen ol{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -451,10 +492,12 @@ ol, ul{
 	margin-bottom: 3rem;
 	flex-wrap: wrap;
 }
-	.navGreen ul li{
-		margin-right: 2rem;
+	.navGreen ol li{
 		margin-top: 0.5rem;
+		width: 40%;
+		font-size: 1.5rem;
 	}
+
 
 .asideGreen{
 	grid-area: asideGreen;
@@ -491,6 +534,19 @@ ol, ul{
 	text-align: left;
 	font-size: 1.7rem;
 }
+
+.listaRestaurantes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;  
+	margin-right: 0;
+	margin-left: 0; 
+}
+
+/*.listaRestaurantes .imageBoxDark{
+	width: 100%;
+}*/
+
 
 /*****************
   Página Contacto
@@ -639,7 +695,7 @@ ol, ul{
 	}
 
 	.homeTitle{
-		width: 35%;
+		width: 30%;
 		text-align: left;
 		margin-left: 4rem;
 		margin-right: 4rem;
@@ -656,13 +712,10 @@ ol, ul{
 		}
 
 	.homeImage{
+		width: 70%;
+		height: 65vh;
 		margin-bottom: 0;
 	}
-
-		.homeImage img{
-			max-width: 100%;
-			max-height: 80vh;
-		}
 
 	/* Página info */
 	.contenedorInfo{
@@ -736,6 +789,10 @@ ol, ul{
 		width: 50%;
 	}
 
+	.navGreen ol li{
+		width: 20%;
+	}
+
 	#accionesGreen{
 		display: flex;
 		flex-wrap: wrap;
@@ -786,7 +843,6 @@ ol, ul{
 	}
 
 	.listaRestaurantes{
-		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
