@@ -5,10 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/e69c34289d.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- AOS Animations -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 	<title>Lugares recomendados</title>
 </head>
 
 <body>
+	<!-- AOS Animations -->
+	<script>
+  		AOS.init();
+	</script>
+
 	<div class="contenedorReco">
 		<!-- LOGO y BARRA DE NAVEGACIÓN -->
 		<nav class="nav">	
@@ -41,9 +51,9 @@
 		<!-- Contenido principal de la página -->
 		<main class="mainReco">		
 			<h2 class="titulo--xl textUpper">Restaurantes</h2>
-			<div class="listaRestaurantes">
-				<article class="imageBoxDark restaurantBox">
-					<h3 class="recomendaciones-titulo titulo--md textUpper">Parrilla Don Julio</h3>
+			<div class="listaRestaurantes" data-aos="fade-up">
+				<article class="imageBoxDark restaurantBox" >
+					<h3 class="titulo--md textUpper">Parrilla Don Julio</h3>
 					<div class="restaurante">
 						<div class="restauranteImg">
 							<img src="../assets/reco.jpg" alt="Parrilla Don Julio">
@@ -59,7 +69,7 @@
 				</article>
 
 				<article class="imageBoxWhite restaurantBox">
-					<h3 class="recomendaciones-titulo titulo--md textUpper">Parrilla Don Julio</h3>
+					<h3 class="titulo--md textUpper">Parrilla Don Julio</h3>
 					<div class="restaurante">
 						<div class="restauranteImg">
 							<img src="../assets/reco.jpg" alt="Parrilla Don Julio">
@@ -74,8 +84,8 @@
 					</div>
 				</article>
 
-				<article class="imageBoxDark restaurantBox">
-					<h3 class="recomendaciones-titulo titulo--md textUpper">Parrilla Don Julio</h3>
+				<article class="imageBoxDark restaurantBox"	>
+					<h3 class="titulo--md textUpper">Parrilla Don Julio</h3>
 					<div class="restaurante">
 						<div class="restauranteImg">
 							<img src="../assets/reco.jpg" alt="Parrilla Don Julio">

@@ -531,6 +531,19 @@ ol, ul{
 	font-size: 1.7rem;
 }
 
+.listaRestaurantes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;  
+	margin-right: 0;
+	margin-left: 0; 
+}
+
+/*.listaRestaurantes .imageBoxDark{
+	width: 100%;
+}*/
+
+
 /*****************
   Página Contacto
 ******************/
@@ -822,7 +835,6 @@ ol, ul{
 	}
 
 	.listaRestaurantes{
-		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
