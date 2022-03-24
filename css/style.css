@@ -165,7 +165,6 @@ ol, ul{
 	box-shadow: none;
 }
 
-
 /*****************
   Estilos de texto 
 ******************/
@@ -587,14 +586,14 @@ ol, ul{
 		border-width: 0;
 	}
 
-.mainContacto article form div{
-	margin-bottom: 2rem;
+.form-select, .form-control{
+	font-size: 1.5rem;
+	font-weight: 300;
 }
 
-.textArea{
-	margin-top: 1rem;
-	width: 97%;
-	padding: 1rem;
+
+textarea{
+	height: 15vh;
 }
 
 
@@ -657,7 +656,7 @@ ol, ul{
 
 	/* Página Contacto */
 
-	.formQuestion{
+	/*.formQuestion{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -665,7 +664,7 @@ ol, ul{
 
 		.formQuestion label, select, input{
 			margin-right: 2rem;
-		}
+		}*/
 
 }
 

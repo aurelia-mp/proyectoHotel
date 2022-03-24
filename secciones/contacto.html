@@ -55,44 +55,65 @@
 		<main class="mainContacto">
 			<article>
 				<h2 class="titulo--sm">Por favor, dejanos aquí tu consulta, te responderemos a la brevedad:</h2>
-				<form action="" method="POST">
-					<div class="formQuestion">
-						<p>¿Estás alojado en este momento en el hotel?</p>
-						<div>
-							<input type="radio" id="huesped" value="in-house"/>
-							<label for="huesped">Sí</label>
-							<input type="radio" id="no-huesped" value="no-huesped"/>
-							<label for="huesped">No</label>
+
+				<!-- Formulario versión Bootstrap -->
+				<form class="mx-5 mx-lg-3">
+					<!-- Row 1 - Checkbox Huésped -->
+					<div class="row mb-4">
+						<p class="col-md-8">¿Estás alojado en este momento en el hotel?</p>
+						<div class="col-md-4 text-md-end">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="flexRadioDefault" id="huesped" checked>
+							  <label class="form-check-label" for="flexRadioDefault2">
+							    Sí
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input me-md-2" type="radio" name="flexRadioDefault" id="no-huesped">
+							  <label class="form-check-label me-md-2" for="flexRadioDefault1">
+							    No
+							  </label>
+							</div>
 						</div>
 					</div>
-					
-					<div class="formQuestion">
-						<label for="motivo">¿Cuál es el motivo de tu consulta?</label>
-						<select id="motivo" name="motivo">
+
+					<!-- ROW 2 - SELECT MOTIVO -->
+					<div class="row justify-content-between mb-4">
+						<label class="form-label" for="motivo">¿Cuál es el motivo de tu consulta?</label>
+						<select class="form-select" aria-label="Motivo consulta">
+							<option selected>Elegí una opción</option>
 							<option value="transfer">Reservar un transfer</option>
 							<option value="reserva">Realizar o modificar una reserva</option>
 							<option value="problema">Problema con mi habitación</option>
 							<option value="conserjeria">Consulta de conserjería</option>
 						</select>
 					</div>
-					
-					<div class="formQuestion">
-						<label for="nombre">Nombre y apellido:	</label>	
-						<input type="text" name="nombre" placeholder="Juan Pérez"/>
+
+					<!-- Row 3 - Nombre -->
+					<div class="row justify-content-between mb-4">
+						<label for="userName" class="form-label" 
+						>Tu nombre:</label>
+						<input type="text" name="userName" class="form-control" placeholder="Juan Pérez">
+					</div>
+
+
+					<!-- ROW 4 - Email -->
+					<div class="row justify-content-between mb-4">
+						<label for="userEmail" class="form-label">Tu email:</label>
+						<input type="email" class="form-control" id="userEmail" placeholder="juan@gmail.com">
+					</div>
+
+					<!-- ROW 5 - Textarea Mensaje -->
+					<div class="row justify-content-between mb-4">
+						<label for="mensaje" class="form-label">Tu mensaje:</label>
+						<textarea name="mensaje" placeholder="Dejanos tu consulta" class="form-control"></textarea>
 					</div>
 					
-					<div class="formQuestion">
-						<label for="email">Tu email:</label>	
-						<input type="email" name="email" placeholder="juan@gmail.com"/>
-					</div> 
-					
-					<div>
-						<legend>Tu mensaje:</legend>
-						<textarea rows="5" class="textArea">Dejanos tu consulta</textarea> 
+					<!-- Botones - CAMBIAR TAMAÑO Y LETRA -->
+					<div class="row justify-content-around">
+					 	<button class="btn btn-primary btn-grad vw-50" type="submit">Enviar consulta</button>
+						<button class="btn btn-light btn-grad-reset vw-50" type="reset">Borrar formulario</button>
 					</div>
-					
-					<input class="btn-grad" type="submit" value="Enviar consulta"/>	
-					<input class="btn-grad-reset botonReset" type="reset" value="Borrar formulario"/>
 				</form>
 			</article>
 		</main>
