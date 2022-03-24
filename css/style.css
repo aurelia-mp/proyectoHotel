@@ -152,8 +152,8 @@ ol, ul{
 	}	
 
 		.btn-grad-reset a:hover, .btn-grad a:hover{
-	  color: black;
-	}	
+	  	color: black;
+		}	
 
 
 .botonHome{
@@ -162,6 +162,7 @@ ol, ul{
 	margin-top: 2rem;
 	margin-bottom: 4rem;
 	width: 70%;
+	box-shadow: none;
 }
 
 
@@ -251,6 +252,10 @@ ol, ul{
 .contenedorHome{
 	display: grid;
 	grid-template-areas: "nav" "mainHome" "footer";
+	background-image: url(../assets/entrada-vertical.jpg);
+	background-position: center 70%;
+	background-repeat: no-repeat;
+	height: 100vh;
 }
 
 #home{
@@ -262,10 +267,15 @@ ol, ul{
 }
 
 .homeTitle{
+	position: relative;
+	top: 35%;
+	background-color: rgba(245, 245, 245, 0.5);
 	text-align: center;
 }
 
 	.homeTitle h1{
+		font-weight: 700;
+		padding-top: 2rem;
 		margin: 2rem 0;
 	}
 
@@ -273,8 +283,16 @@ ol, ul{
 		margin: 2rem 0;
 	}
 
+#footerHome{
+	height: 90px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+
+}
+
 /* Carusel fotos header */
-.homeImage{
+/*.homeImage{
 	height: 50vh;
 	animation-name: animateHeader;
 	animation-iteration-count: infinite;
@@ -283,14 +301,14 @@ ol, ul{
 	animation-timing-function: ease-in-out;
 	background-size: cover;
 	background-position: center;
-}
+}*/
 
-@keyframes animateHeader{
+/*@keyframes animateHeader{
 	0%{background-image: url(../assets/pileta.jpg)}
 	33%{background-image: url(../assets/restaurante.jpg)}
 	66%{background-image: url(../assets/patio-noche.jpg)}
 	100%{background-image: url(../assets/cascada.jpg)}	
-}
+}*/
 
 /*****************
 	Página Info
@@ -670,22 +688,25 @@ ol, ul{
 	}
 
 	/* Homepage */
-	.mainHome{
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		border: 0.5px solid #212A31;
+
+	.contenedorHome{
+		background-image: url(../assets/entrada-horizontal.jpg);
+		background-size: cover;
+		background-position: center 20%;
 	}
 
 	.homeTitle{
-		width: 30%;
+		position: relative;
+		top: 0;
+		background-color: transparent;
+		color: whitesmoke;
+		width: 35%;
 		text-align: left;
-		margin-left: 4rem;
-		margin-right: 4rem;
-		padding-left: 0;
+		margin-left: 7rem;
 	}
 
 		.homeTitle h1{
+			font-size: 5rem;
 			line-height: 6rem;
 			margin-bottom: 4rem;
 		}
@@ -694,11 +715,13 @@ ol, ul{
 			margin-bottom: 4rem;
 		}
 
-	.homeImage{
-		width: 70%;
-		height: 65vh;
-		margin-bottom: 0;
-	}
+		#footerHome{
+			height: 50px;
+		}
+
+			#footerHome .wifi{
+				margin-left: 3rem;
+			}
 
 	/* Página info */
 	.contenedorInfo{
@@ -835,10 +858,6 @@ ol, ul{
 	}
 
 	/* Footer */
-
-	#footerHome{
-		margin-top: -1rem;
-	}
 
 	.footer{
 		margin-top: 3rem;
