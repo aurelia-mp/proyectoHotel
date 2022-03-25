@@ -609,14 +609,6 @@ textarea{
 	}
 
 	/* Página Recomendaciones */
-
-/*	.restaurante{
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
-		align-content: center;
-	}*/
-
 	.restauranteTxt{
 		text-align: left;
 		margin-left: 3rem;
@@ -625,6 +617,14 @@ textarea{
 
 /* lg breakpoint */
 @media only screen and (min-width: 992px){
+	/*nav bar */
+
+	.navbar-nav .nav-item .nav-link{
+		font-size: 1.5rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
 	/*Recomendaciones */
 		.listaRestaurantes .imageBoxDark, .listaRestaurantes .imageBoxWhite{
 		border: 1.5rem solid white;
@@ -649,19 +649,9 @@ textarea{
 
 @media only screen and (min-width: 1024px){
 	/* Nav */
-	.nav{
-/*		flex-direction: row;
-		justify-content: space-between;*/
-		padding: 0 4rem;
-	}
-
-		.nav ul li{
-			margin: 0 2rem;
-		}
-
-	.logo{
+	/*.logo{
 		padding-left: 0;
-	}
+	}*/
 
 	/* Homepage */
 
