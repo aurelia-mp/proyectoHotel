@@ -206,24 +206,24 @@ ol, ul{
   Estilos de contenedores
 **************************/
 .imageBoxDark{
-	width: 97%;
+	/*width: 97%;*/
 	background-color: #212A31;
 	color: whitesmoke;
 	text-align: center;
-	padding: 3rem;
+	/*padding: 3rem;*/
 }
 
 .imageBoxWhite{
-	width: 97%;
+	/*width: 97%;*/
 	color: #212A31;
 	text-align: center;
-	padding: 3rem;
+	/*padding: 3rem;*/
 }
 
-	.imageBoxDark img, .imageBoxWhite img{
+	/*.imageBoxDark img, .imageBoxWhite img{
 		width: 100%;
 		margin-bottom: 3rem;
-	}
+	}*/
 
 	.imageBoxDark h2, .imageBoxDark h3{
 		color: #F1BD13;
@@ -287,27 +287,7 @@ ol, ul{
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-
 }
-
-/* Carusel fotos header */
-/*.homeImage{
-	height: 50vh;
-	animation-name: animateHeader;
-	animation-iteration-count: infinite;
-	animation-delay: 1s;
-	animation-duration: 8s;
-	animation-timing-function: ease-in-out;
-	background-size: cover;
-	background-position: center;
-}*/
-
-/*@keyframes animateHeader{
-	0%{background-image: url(../assets/pileta.jpg)}
-	33%{background-image: url(../assets/restaurante.jpg)}
-	66%{background-image: url(../assets/patio-noche.jpg)}
-	100%{background-image: url(../assets/cascada.jpg)}	
-}*/
 
 /*****************
 	Página Info
@@ -519,21 +499,13 @@ ol, ul{
 	text-align: center;
 }
 
-.restaurante{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.restauranteImg{
-		width: 60%;	
-	}
 
 .datosReco{
 	margin-top: 2rem;
-	text-align: left;
 	font-size: 1.7rem;
 }
+
+/*
 
 .listaRestaurantes{
 	display: flex;
@@ -604,9 +576,9 @@ textarea{
 /* ipad */
 
 @media only screen and (min-width: 768px){
-	.imageBoxDark img, .imageBoxWhite img{
+	/*.imageBoxDark img, .imageBoxWhite img{
 		width: 75%;
-	}
+	}*/
 
 	/* Nav - Vuelve a aparecer el ítem Home en Tablets y Desktops */
 	#home{
@@ -638,34 +610,39 @@ textarea{
 
 	/* Página Recomendaciones */
 
-	.restaurante{
+/*	.restaurante{
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
 		align-content: center;
-	}
-
-	.restauranteImg{
-		width: 50%;	
-	}
+	}*/
 
 	.restauranteTxt{
-		width: 50%;	
 		text-align: left;
+		margin-left: 3rem;
+	}
+}
+
+/* lg breakpoint */
+@media only screen and (min-width: 992px){
+	/*Recomendaciones */
+		.listaRestaurantes .imageBoxDark, .listaRestaurantes .imageBoxWhite{
+		border: 1.5rem solid white;
+		background-color: white;
+		color: black;
 	}
 
-	/* Página Contacto */
+		.listaRestaurantes .imageBoxDark a, .listaRestaurantes .imageBoxWhite a{
+			color: black;
+		}
 
-	/*.formQuestion{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		.listaRestaurantes .imageBoxDark h3, .listaRestaurantes .imageBoxWhite h3{
+			color: black;
+		}
+
+		.restauranteTxt{
+		text-align: center;
 	}
-
-		.formQuestion label, select, input{
-			margin-right: 2rem;
-		}*/
-
 }
 
 /* desktop */
@@ -834,28 +811,14 @@ textarea{
 	}
 
 	/* Página Recomendaciones */
-	.restaurante{
+/*	.restaurante{
 		flex-direction: column;
-	}
-
-	.listaRestaurantes .imageBoxDark, .listaRestaurantes .imageBoxWhite{
-		margin: 2rem;
-		border: 1px solid;
 	}
 
 	.restauranteImg, .restauranteTxt{
 		width: 100%;
 	}
-
-	.listaRestaurantes{
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	
-	.restaurantBox{
-		width: 30%;
-	}
-
+*/
 	/* Footer */
 
 	.footer{
