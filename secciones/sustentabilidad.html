@@ -48,7 +48,7 @@
 		<!-- Header -->
 		<header class="header">
 				<img src="../assets/cascada.jpg" alt="cascada de agua en el patio">
-				<h1 class="textUpper textCenter titulo--xxl textSpaced">Nuestro programa sustentable</h1>
+				<h1 class="text-uppercase textCenter titulo--xxl textSpaced">Nuestro programa sustentable</h1>
 		</header>
 
 		<!-- Intro - Arquitectura Verde-->
@@ -57,79 +57,105 @@
 				<img src="../assets/fachada.jpg" alt="Fachada verde">
 			</div>
 			<div class="introGreenTxt">
-				<h2 class="titulo--xl textUpper">Arquitectura verde</h2>
+				<h2 class="titulo--xl text-uppercase">Arquitectura verde</h2>
 				<p>Palo Santo es el primer hotel urbano sustentable de Latinoamérica.</p><br>
 				<p>Construido según normas LEED (Leadership in Energy and Environmental Design), Palo Santo es un hotel responsable con una arquitectura verde basada en la presencia de jardines verticales y un programa ambiental abarcativo que comprende las diferentes ramas de la edificación sustentable.</p>
 			</div>
 		</article>		
 
 		<!-- Acciones sustentables -->
-		<main class="mainGreen">
+		<main class="mainGreen container-fluid my-5	mt-lg-5 mb-lg-0">
 			<h4 class="titulo--sm">A continuación te contamos algunas de las acciones que tomamos para minimizar nuestro impacto ambiental:</h4>
-			<div class="navGreen" id="navGreen">
-				<p>Hacé click en una categoría a continuación:</p>
-				<ol>
-					<li class="boton btn-grad"><a class="textUpper" href="#energia">Energía</a></li>
-					<li class="boton btn-grad"><a class="textUpper" href="#agua">Agua</a></li>
-					<li class="boton btn-grad"><a class="textUpper" href="#aislaciones">Materiales</a></li>
-					<li class="boton btn-grad"><a class="textUpper" href="#operaciones">Operaciones</a></li>
-				</ol>
-			</div>
 
-			<div id="accionesGreen">
-				<article id="energia">
-					<h3 class="titulo--md textUpper">Energía</h3>
-					<img src="../assets/cascada.jpg">
-					<h5>Uso racional de la energía:</h5>
-					<ul>
-						<li>Uso de leds y artefactos de bajo consumo</li>
-						<li>Detectores de movimiento para evitar consumo innecesario</li>
-						<li>Equipos de aire acondicionado VRV con sistema Inverter</li>
-						<li>Optimización de las aislaciones</li>
-						<li>Ascensores de bajo consumo</li>
-						<li>Tarjetas de corte de energía en las habitaciones</li>
-					</ul>
-					<p><a href="#navGreen" class="backtoTop">Elegir otra categoría</a></p>
-				</article>
-					
-				<article id="agua">
-					<h3 class="titulo--md textUpper">Agua</h3>
-					<img src="../assets/cascada.jpg">
-					<h5>Empleo racional del agua:</h5>
-					<ul>
-						<li>Explicación 1</li>
-						<li>Explicación 2</li>
-						<li>Explicación 3</li>
-					</ul>
-					<p><a href="#navGreen" class="backtoTop">Elegir otra categoría</a></p>
-				</article>
 
-				<article id="aislaciones">
-					<h3 class="titulo--md textUpper">Aislaciones y materiales</h3>
-					<img src="../assets/cascada.jpg">
-					<h5>Título:</h5>
-					<ul>
-						<li>Uso de leds y artefactos de bajo consumo</li>
-						<li>Detectores de movimiento para evitar consumo innecesario</li>
-						<li>Equipos de aire acondicionado VRV con sistema Inverter</li>
-						<li>Optimización de las aislaciones</li>
-						<li>Ascensores de bajo consumo</li>
-						<li>Tarjetas de corte de energía en las habitaciones</li>
-					</ul>
-					<p><a href="#navGreen" class="backtoTop">Elegir otra categoría</a></p>
-				</article>
-					
-				<article id="operaciones">
-					<h3 class="titulo--md textUpper">Operaciones</h3>
-					<img src="../assets/cascada.jpg">
-					<h5>Título:</h5>
-					<ul>
-						<li>Explicación 1</li>
-						<li>Explicación 2</li>
-						<li>Explicación 3</li>
-					</ul>
-					<p><a href="#navGreen" class="backtoTop">Elegir otra categoría</a></p>
-				</article>
+			<div class="row mb-5">
+				<!-- SLIDER - PENDIENTE -->
+				<div class="col-lg-6 col-xxl-5 pe-lg-5 pe-xxl-3">
+					<img src="../assets/cascada.jpg" alt="cascada" class="w-100 mb-3">
+				</div>
+				<!-- ends slider -->
+
+				<!-- Accordion Acciones sustentables -->
+				<div class="col-lg-6 col-xxl-7">
+					<div class="accordion accordion-flush w-90 fw-light" id="accordionGreen">
+						<!-- Item 1: Energia -->
+					  	<div class="accordion-item">
+						    <h2 class="accordion-header" id="accion1">
+						      <button class="accordion-button collapsed fs-3 fw-light text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#energia" aria-expanded="false" aria-controls="energia">
+						        Energía
+						      </button>
+						    </h2>
+						    <div id="energia" class="accordion-collapse collapse" aria-labelledby="accion1" data-bs-parent="#accordionGreen">
+						      	<div class="accordion-body">
+									<h3 class="text-uppercase fs-4 fw-lighter">Empleo racional del agua:</h3>
+									<ul>
+										<li>Explicación 1</li>
+										<li>Explicación 2</li>
+										<li>Explicación 3</li>
+									</ul>
+								</div>
+					    	</div>
+					  	</div>
+					  	
+					  	<!-- Item 2: Agua -->
+					  	<div class="accordion-item">
+						    <h2 class="accordion-header" id="accion2">
+						      <button class="accordion-button collapsed fs-3 fw-light text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#agua" aria-expanded="false" aria-controls="agua">
+						        Agua
+						      </button>
+						    </h2>
+						    <div id="agua" class="accordion-collapse collapse" aria-labelledby="accion2" data-bs-parent="#accordionGreen">
+						      	<div class="accordion-body">
+							      	<h3 class="text-uppercase fs-4 fw-lighter">Empleo racional del agua:</h3>
+									<ul>
+										<li>Explicación 1</li>
+										<li>Explicación 2</li>
+										<li>Explicación 3</li>
+									</ul>
+								</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Item 3: Materiales -->
+					  	<div class="accordion-item">
+						    <h2 class="accordion-header" id="accion3">
+						      <button class="accordion-button collapsed fs-3 fw-light text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#materiales" aria-expanded="false" aria-controls="materiales">
+						        Materiales y aislaciones
+						      </button>
+						    </h2>
+						    <div id="materiales" class="accordion-collapse collapse" aria-labelledby="accion3" data-bs-parent="#accordionGreen">
+						      	<div class="accordion-body">
+							      	<h3 class="text-uppercase fs-4 fw-lighter">Empleo racional del agua:</h3>
+									<ul>
+										<li>Explicación 1</li>
+										<li>Explicación 2</li>
+										<li>Explicación 3</li>
+									</ul>
+								</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Item 4: Operaciones -->
+					  	<div class="accordion-item">
+						    <h2 class="accordion-header" id="accion4">
+						      <button class="accordion-button collapsed fs-3 fw-light text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#operaciones" aria-expanded="false" aria-controls="operaciones">
+						        Operaciones
+						      </button>
+						    </h2>
+						    <div id="operaciones" class="accordion-collapse collapse" aria-labelledby="accion4" data-bs-parent="#accordionGreen">
+						      	<div class="accordion-body">
+							      	<h3 class="text-uppercase fs-4 fw-lighter">Empleo racional del agua:</h3>
+									<ul>
+										<li>Explicación 1</li>
+										<li>Explicación 2</li>
+										<li>Explicación 3</li>
+									</ul>
+								</div>
+					    	</div>
+					  	</div>
+					</div>
+				<!-- Ends accordion -->
+				</div>
 			</div>
 		</main>
 
@@ -143,7 +169,7 @@
 		<footer class ="footer textWhite bgDark">
 			<div class="wifi">
 				<i class="fa-solid fa-wifi"></i>
-				<span class="textUpper">Red</span>: Palo Santo / <span class="textUpper">Contraseña</span>: bonpland
+				<span class="text-uppercase">Red</span>: Palo Santo / <span class="text-uppercase">Contraseña</span>: bonpland
 			</div>
 			<div class="redes">
 				<a href="https://www.facebook.com/PaloSantoHotel" target="_blank">

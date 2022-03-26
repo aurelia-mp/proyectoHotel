@@ -9,7 +9,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+}	
 
 html{
 	font-size:  62.5%;
@@ -443,64 +443,19 @@ ol, ul{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100%;
 }
 
 .mainGreen{
 	grid-area: mainGreen;
 	width: 97%;
-	margin: 3rem auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
 }
-
-	.mainGreen div article{
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		margin-bottom: 3rem;
-	}
-
-		.mainGreen div article h3{
-			border-top: 0.5px #F1BD13 solid;
-			border-bottom: 0.5px #F1BD13 solid;	
-			padding: 1.5rem 0;
-		}
-
-		.mainGreen div article img{
-			width: 60%;
-			margin-bottom: 2rem;
-		}
-
-			.mainGreen div article p{
-				margin-top: 2rem;
-			}
-
-				.mainGreen div article p a{
-					color: #212A31;
-					padding-bottom: 0.3rem;
-					border-bottom: 0.5px #212A31 solid;	
-				}
-
-.navGreen ol{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
-	flex-wrap: wrap;
-}
-	.navGreen ol li{
-		margin-top: 0.5rem;
-		width: 40%;
-		font-size: 1.5rem;
-	}
 
 
 .asideGreen{
 	grid-area: asideGreen;
 	margin-bottom: 3rem;
-	border: 5px solid #212A31;
+	border: 2px solid #212A31;
 	padding: 2rem;
 }
 
@@ -758,24 +713,9 @@ textarea{
 		width: 20%;
 	}
 
-	#accionesGreen{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: flex-start;
-		column-gap: 3rem;
-	}
-
-		#accionesGreen article{
-			width: 45%;
-		}
-
-	.backtoTop{
-		display: none;
-	}
-	
-
 	.asideGreen{
+		margin-left: 3rem;
+		margin-right: 1rem;
 		margin-bottom: 0;
 	}
 
