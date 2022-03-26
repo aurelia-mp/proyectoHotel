@@ -155,7 +155,6 @@ ol, ul{
 	  	color: black;
 		}	
 
-
 .botonHome{
 	font-size: 3rem;
 	margin-left: 0;
@@ -205,43 +204,66 @@ ol, ul{
 /*************************
   Estilos de contenedores
 **************************/
-.imageBoxDark{
-	/*width: 97%;*/
+/* Estilos de caja para página Recomendaciones */
+
+.imageBoxBlackReco{
 	background-color: #212A31;
 	color: whitesmoke;
 	text-align: center;
-	/*padding: 3rem;*/
 }
 
-.imageBoxWhite{
-	/*width: 97%;*/
-	color: #212A31;
-	text-align: center;
-	/*padding: 3rem;*/
-}
-
-	/*.imageBoxDark img, .imageBoxWhite img{
-		width: 100%;
-		margin-bottom: 3rem;
-	}*/
-
-	.imageBoxDark h2, .imageBoxDark h3{
+	.imageBoxBlackReco h3{
 		color: #F1BD13;
 	}
 
-	.imageBoxDark p, .imageBoxDark ol, .imageBoxWhite p, .imageBoxWhite ol{
-		font-weight: 300;
-	}
+	.imageBoxBlackReco a{
+			color: whitesmoke;
+			text-decoration: underline;
+		}
 
-	.imageBoxDark a{
-		color: whitesmoke;
-		text-decoration: underline;
+.imageBoxWhite{
+	color: #212A31;
+	text-align: center;
+}	
+
+	.imageBoxBlackReco p, .imageBoxBlackReco ol, .imageBoxWhite p, .imageBoxWhite ol{
+		font-weight: 300;
 	}
 
 	.imageBoxWhite a{
 		color: #404952;
 		text-decoration: underline;
 	}
+
+	/* Estilo de caja para páginas Sustentabilidad y Info */
+
+.imageBoxDark{
+	width: 97%;
+	background-color: #212A31;
+	color: whitesmoke;
+	text-align: center;
+	padding: 3rem;
+}
+
+		.imageBoxDark img{
+			width: 100%;
+			margin-bottom: 3rem;
+		}
+
+		.imageBoxDark h3, .imageBoxDark h2{
+			color: #F1BD13;
+		}	
+
+		.imageBoxDark p, .imageBoxDark ol{
+			font-weight: 300;
+		}
+
+		.imageBoxDark a{
+			color: whitesmoke;
+			text-decoration: underline;
+		}
+
+
 
 
 /*****************
@@ -255,10 +277,6 @@ ol, ul{
 	background-position: center 70%;
 	background-repeat: no-repeat;
 	height: 100vh;
-}
-
-#home{
-	display: none;
 }
 
 .mainHome{
@@ -505,21 +523,6 @@ ol, ul{
 	font-size: 1.7rem;
 }
 
-/*
-
-.listaRestaurantes{
-	display: flex;
-	flex-direction: column;
-	align-items: center;  
-	margin-right: 0;
-	margin-left: 0; 
-}
-
-/*.listaRestaurantes .imageBoxDark{
-	width: 100%;
-}*/
-
-
 /*****************
   Página Contacto
 ******************/
@@ -576,13 +579,8 @@ textarea{
 /* ipad */
 
 @media only screen and (min-width: 768px){
-	/*.imageBoxDark img, .imageBoxWhite img{
-		width: 75%;
-	}*/
-
-	/* Nav - Vuelve a aparecer el ítem Home en Tablets y Desktops */
-	#home{
-		display: block;
+	.imageBoxDark img{
+		width: 80%;
 	}
 
 	/* Footer en una sola línea */
@@ -626,17 +624,17 @@ textarea{
 	}
 
 	/*Recomendaciones */
-		.listaRestaurantes .imageBoxDark, .listaRestaurantes .imageBoxWhite{
+		.listaRestaurantes .imageBoxBlackReco, .listaRestaurantes .imageBoxWhite{
 		border: 1.5rem solid white;
 		background-color: white;
 		color: black;
 	}
 
-		.listaRestaurantes .imageBoxDark a, .listaRestaurantes .imageBoxWhite a{
+		.listaRestaurantes .imageBoxBlackReco a, .listaRestaurantes .imageBoxWhite a{
 			color: black;
 		}
 
-		.listaRestaurantes .imageBoxDark h3, .listaRestaurantes .imageBoxWhite h3{
+		.listaRestaurantes .imageBoxBlackReco h3, .listaRestaurantes .imageBoxWhite h3{
 			color: black;
 		}
 
@@ -648,11 +646,6 @@ textarea{
 /* desktop */
 
 @media only screen and (min-width: 1024px){
-	/* Nav */
-	/*.logo{
-		padding-left: 0;
-	}*/
-
 	/* Homepage */
 
 	.contenedorHome{
