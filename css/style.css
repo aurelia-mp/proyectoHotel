@@ -32,7 +32,7 @@ h3,
 h4,
 h5{
 	margin-bottom: 3rem;
-}
+}	
 
 ol, ul{
 	list-style: none;
@@ -56,6 +56,10 @@ ol, ul{
 
 .navbar-toggler-icon{
     font-size: 2rem;
+}
+
+.bg-whitesmoke{
+	background-color: whitesmoke;
 }
 
 /*****************
@@ -110,20 +114,6 @@ ol, ul{
 /*************************
   Estilos de botones
 **************************/
-
-.boton{
-	padding: 1rem 3rem;
-	
-}
-	
-.botonYellow{
-	background-color: #F1BD13;
-
-}
-
-	.botonYellow:hover{
-		background-color: #E7B11E;	
-	}
 
 .btn-grad, .btn-grad-reset{
 	border: none;
@@ -239,31 +229,39 @@ ol, ul{
 
 	/* Estilo de caja para páginas Sustentabilidad y Info */
 
-.imageBoxDark{
-	width: 97%;
+.blackCard{
 	background-color: #212A31;
 	color: whitesmoke;
-	text-align: center;
-	padding: 3rem;
+	padding-bottom: 2rem;
 }
 
-		.imageBoxDark img{
-			width: 100%;
-			margin-bottom: 3rem;
+	.blackCard h2{
+		color: #F1BD13;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.blackCard img{
+		padding: 3rem;
+	}
+
+	.blackCard ol{
+		list-style: none;
+	}
+
+		.blackCard ol li{
+			list-style: none;
+			margin: 2rem auto;
 		}
 
-		.imageBoxDark h3, .imageBoxDark h2{
-			color: #F1BD13;
-		}	
+	.blackCard a{
+		color: whitesmoke;
+		text-decoration: underline;
+	}
 
-		.imageBoxDark p, .imageBoxDark ol{
-			font-weight: 300;
-		}
-
-		.imageBoxDark a{
-			color: whitesmoke;
-			text-decoration: underline;
-		}
+	.blackCard .card-body p{
+		margin: auto 2rem;
+	}
 
 
 /*****************
@@ -322,6 +320,11 @@ ol, ul{
 		font-weight: 700;
 	}
 
+.blackCard[id="horarios"]{
+	padding: 3rem;
+	text-align: center;
+}
+
 #horarios table{
 	font-weight: 300;
 	width: 100%;
@@ -341,36 +344,6 @@ ol, ul{
 	text-align: right;
 }
 
-.blackCard{
-	background-color: #212A31;
-	color: whitesmoke;
-	padding-bottom: 2rem;
-}
-
-	.blackCard h2{
-		color: #F1BD13;
-		margin-left: 2rem;
-		margin-bottom: 2rem;
-	}
-
-	.blackCard img{
-		padding: 3rem;
-	}
-
-	.blackCard ol{
-		list-style: none;
-	}
-
-		.blackCard ol li{
-			list-style: none;
-			margin: 2rem auto;
-		}
-
-	.blackCard a{
-		color: whitesmoke;
-		text-decoration: underline;
-	}
-
 #downloads{
 	background-color: #fdf8e7;
 	padding: 2rem;
@@ -387,17 +360,6 @@ ol, ul{
 		margin-bottom: 2rem;
 	}
 
-.imageBoxDarkv2{
-	background-color: #212A31;
-	color: whitesmoke;
-	text-align: center;
-	padding: 3rem;
-}
-
-		.imageBoxDarkv2 h2{
-			color: #F1BD13;
-		}	
-
 
 /*****************
   Página Sustentabilidad
@@ -408,19 +370,18 @@ ol, ul{
 	grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer";
 }
 
-.introGreen{
+#introGreen{
 	grid-area: introGreen;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
+}
+
+.card[id="introGreen"]{
+	border: 0px;
 }
 
 .mainGreen{
 	grid-area: mainGreen;
 	width: 97%;
 }
-
 
 .asideGreen{
 	grid-area: asideGreen;
@@ -441,7 +402,6 @@ ol, ul{
 .mainReco h2{
 	text-align: center;
 }
-
 
 .datosReco{
 	margin-top: 2rem;
@@ -504,10 +464,6 @@ textarea{
 /* ipad */
 
 @media only screen and (min-width: 768px){
-	.imageBoxDark img{
-		width: 80%;
-	}
-
 	/* Footer en una sola línea */
 	.footer{
 		flex-direction: row;
@@ -519,17 +475,7 @@ textarea{
 	.mainInfo{
 		flex-direction: row;
 		flex-basis: 0;
-	}
-
-	#horarios{
-		flex-grow: 3;
-		margin-right: 3rem;
-	}
-
-	#nofumar{
-		flex-grow: 1;
-		border: none;
-	}
+	}	
 
 	/* Página Recomendaciones */
 	.restauranteTxt{
@@ -607,55 +553,6 @@ textarea{
 				margin-left: 3rem;
 			}
 
-	/* Página info */
-	.contenedorInfo{
-		grid-template-areas: "nav nav"	
-							 "header header"
-							 "contenidoInfo descargas"
-							 "footer footer";
-		grid-template-columns: 5fr 1fr;	
-	}
-
-	#horarios{
-		width: 40%	;
-	}
-
-	#nofumar{
-		width: 30%;
-	}
-	.mainInfo{
-		align-items: flex-start;
-		margin-right: 2rem;
-		margin-left: 2rem;
-		width: 97%;
-	}
-
-	#servicios{
-		flex-direction: row;
-		margin-left: 1rem;
-	}
-
-		#servicios img{
-			margin-bottom: 1rem;
-		}
-
-	.descargas{
-		background-color: #fdf8e7;
-		padding: 2rem;
-		margin: 3rem 2rem 0 0;
-	}
-
-	.descargas ol{
-		flex-direction: column;
-		margin-left: -5px;
-	}
-
-		.descargas ol li a{
-			flex-direction: column;
-			justify-content: center;
-			margin-bottom: 2rem;
-		}
-
 	/* Página Sustentabilidad */
 	.contenedorGreen{
 		grid-template-areas: "nav nav"
@@ -666,25 +563,8 @@ textarea{
 		grid-template-columns: 3fr 1fr;
 	}
 
-	.introGreen{
-		flex-direction: row;
-		align-items: center;
-	}
-
-	.introGreenImg{
-		width: 50%;
-		margin-bottom: 0;
-	}
-
-	.introGreenTxt{
-		width: 50%;
-	}
-
-	.navGreen ol li{
-		width: 20%;
-	}
-
 	.asideGreen{
+		font-size: 1.5rem;
 		margin-left: 3rem;
 		margin-right: 1rem;
 		margin-bottom: 0;
