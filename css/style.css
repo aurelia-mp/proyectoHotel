@@ -26,7 +26,11 @@ a{
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5{
+h1,
+h2,
+h3,
+h4,
+h5{
 	margin-bottom: 3rem;
 }
 
@@ -77,11 +81,12 @@ ol, ul{
 		}
 
 	.redes a img{
-			margin: 0 15px;
+			margin: 0 15px 3px 15px;
 			height: 14px;
 		}
 
-			.redes a i:hover, .redes a img:hover{
+			.redes a i:hover,
+			.redes a img:hover{
 			transform: scale(1.3);
 		}
 
@@ -110,10 +115,6 @@ ol, ul{
 	padding: 1rem 3rem;
 	
 }
-
-/*	.boton a{
-		color: #212A31;;
-	}*/
 	
 .botonYellow{
 	background-color: #F1BD13;
@@ -168,10 +169,6 @@ ol, ul{
   Estilos de texto 
 ******************/
 
-.textUpper{	
-	text-transform: uppercase;
-}
-
 .textWhite{
 	color: whitesmoke;
 }
@@ -184,6 +181,8 @@ ol, ul{
 	font-weight: 400;
 	font-size: 3.2rem;
 	line-height: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .titulo--xl{
@@ -226,7 +225,10 @@ ol, ul{
 	text-align: center;
 }	
 
-	.imageBoxBlackReco p, .imageBoxBlackReco ol, .imageBoxWhite p, .imageBoxWhite ol{
+	.imageBoxBlackReco p, 
+	.imageBoxBlackReco ol, 
+	.imageBoxWhite p, 
+	.imageBoxWhite ol{
 		font-weight: 300;
 	}
 
@@ -262,8 +264,6 @@ ol, ul{
 			color: whitesmoke;
 			text-decoration: underline;
 		}
-
-
 
 
 /*****************
@@ -311,11 +311,6 @@ ol, ul{
 	Página Info
 ******************/
 
-.contenedorInfo{
-	display: grid;
-	grid-template-areas: "nav" "header" "contenidoInfo" "descargas" "footer";
-}
-
 .introInfo{
 	padding: 4rem;
 	margin: 1rem;
@@ -326,21 +321,6 @@ ol, ul{
 	.introInfo span{
 		font-weight: 700;
 	}
-
-.mainInfo{
-	grid-area: mainInfo;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 3rem;
-}
-
-.contenedorInfoSecondario{
-	grid-area: contenidoInfo;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 
 #horarios table{
 	font-weight: 300;
@@ -361,72 +341,62 @@ ol, ul{
 	text-align: right;
 }
 
-#nofumar{
-	grid-area: nofumar;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 4rem;
-	padding: 4rem;
-	border-top: 0.5px solid #212A31;
-	border-bottom: 0.5px solid #212A31;
+.blackCard{
+	background-color: #212A31;
+	color: whitesmoke;
+	padding-bottom: 2rem;
 }
 
-	#nofumar i{
-		margin-bottom: 3rem;
+	.blackCard h2{
+		color: #F1BD13;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
 	}
 
-	#nofumar h2{
-		text-align: center;
+	.blackCard img{
+		padding: 3rem;
 	}
 
-#servicios{
-	grid-area: servicios;
-	display: flex;
-	flex-direction: column;
-	margin-top: 4rem;
-}
+	.blackCard ol{
+		list-style: none;
+	}
 
-		#servicios ol li{
-			margin: 2rem 0;
+		.blackCard ol li{
+			list-style: none;
+			margin: 2rem auto;
 		}
 
-.descargas{
-	grid-area: descargas;
-	width: 97%;
-	margin: 3rem auto;
+	.blackCard a{
+		color: whitesmoke;
+		text-decoration: underline;
+	}
+
+#downloads{
+	background-color: #fdf8e7;
+	padding: 2rem;
 }
 
-	.descargas a{
-		color: #212A31;
+	#downloads ol{
+		margin-left: -2rem;
 	}
 
-	.descargas h2{
-		text-align: center;
-	}
-	
-	.descargas ol{
+	#downloads ol li a{
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2rem;
 	}
 
-		.descargas ol li{
-			flex-basis: 0;
-			flex-grow: 1;
-		}
+.imageBoxDarkv2{
+	background-color: #212A31;
+	color: whitesmoke;
+	text-align: center;
+	padding: 3rem;
+}
 
-			.descargas ol li a{
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-start;
-				text-align: center;
-			}
-
-			.descargas ol a i{
-				margin-bottom: 2rem;
-			}
+		.imageBoxDarkv2 h2{
+			color: #F1BD13;
+		}	
 
 
 /*****************
@@ -455,7 +425,7 @@ ol, ul{
 .asideGreen{
 	grid-area: asideGreen;
 	margin-bottom: 3rem;
-	border: 2px solid #212A31;
+	border: 5px solid #212A31;
 	padding: 2rem;
 }
 
@@ -580,9 +550,7 @@ textarea{
 
 	/*Recomendaciones */
 		.listaRestaurantes .imageBoxBlackReco, .listaRestaurantes .imageBoxWhite{
-		/*border: 1.5rem solid white;*/
-		margin-right: 2rem;
-		margin-left: 2rem;
+		border: 1.5rem solid white;
 		background-color: white;
 		color: black;
 	}
@@ -679,6 +647,7 @@ textarea{
 
 	.descargas ol{
 		flex-direction: column;
+		margin-left: -5px;
 	}
 
 		.descargas ol li a{
@@ -735,15 +704,6 @@ textarea{
 		height: 100%;
 	}
 
-	/* Página Recomendaciones */
-/*	.restaurante{
-		flex-direction: column;
-	}
-
-	.restauranteImg, .restauranteTxt{
-		width: 100%;
-	}
-*/
 	/* Footer */
 
 	.footer{
