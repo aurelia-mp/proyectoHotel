@@ -36,6 +36,8 @@ h5{
 
 ol, ul{
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /*********************
@@ -252,6 +254,7 @@ ol, ul{
 		.blackCard ol li{
 			list-style: none;
 			margin: 2rem auto;
+			padding-left: 2rem;
 		}
 
 	.blackCard a{
@@ -331,17 +334,18 @@ ol, ul{
 	border-collapse: collapse;
 }
 
+	#horarios table tr td:first-child{
+		text-align: left;
+	}
+
+	#horarios table tr td:nth-child(2){
+		text-align: left;
+	}
+
+
 #horarios tr{
 	height: 7rem;
 	border-bottom: 0.5px solid whitesmoke;
-}
-
-.horariosCol1{;
-	text-align: left;
-}
-
-.horariosCol2{
-	text-align: right;
 }
 
 #downloads{
