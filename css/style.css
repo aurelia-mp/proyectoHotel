@@ -195,40 +195,6 @@ ol, ul{
 /*************************
   Estilos de contenedores
 **************************/
-/* Estilos de caja para página Recomendaciones */
-
-.imageBoxBlackReco{
-	background-color: #212A31;
-	color: whitesmoke;
-	text-align: center;
-}
-
-	.imageBoxBlackReco h3{
-		color: #F1BD13;
-	}
-
-	.imageBoxBlackReco a{
-			color: whitesmoke;
-			text-decoration: underline;
-		}
-
-.imageBoxWhite{
-	color: #212A31;
-	text-align: center;
-}	
-
-	.imageBoxBlackReco p, 
-	.imageBoxBlackReco ol, 
-	.imageBoxWhite p, 
-	.imageBoxWhite ol{
-		font-weight: 300;
-	}
-
-	.imageBoxWhite a{
-		color: #404952;
-		text-decoration: underline;
-	}
-
 	/* Estilo de caja para páginas Sustentabilidad y Info */
 
 .blackCard{
@@ -398,19 +364,46 @@ ol, ul{
   Página Recomendaciones
 **************************/
 
-.contenedorReco{
-	display: grid;
-	grid-template-areas: "nav" "header" "mainReco" "footer";
+.whiteCard{
+	border: 0.5px solid #212A31;
+	padding-bottom: 2rem;
 }
 
-.mainReco h2{
-	text-align: center;
-}
+
+	.whiteCard .card-text{
+/*		padding-left: 1rem;*/
+	}
+
+	.whiteCard h2{
+		font-weight: 700;
+		color: #F1BD13;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.whiteCard img{
+		padding: 3rem;
+	}
+
+	.whiteCard .card-body p{
+		margin: auto 2rem;
+	}
 
 .datosReco{
+	padding-left: 0;
+	background-color: transparent;
+	text-align: left;
+	padding-top: 2rem;
 	margin-top: 2rem;
 	font-size: 1.7rem;
+	font-weight: 300;
 }
+
+	.datosReco a{
+		text-decoration: underline;
+		color: #2AA3D7;
+}
+
 
 /*****************
   Página Contacto
@@ -465,6 +458,13 @@ textarea{
   Media Queries
 ******************/
 
+/* ipad only */ 
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	.whiteCard img{
+		padding: 0;
+	}
+}
+
 /* ipad */
 
 @media only screen and (min-width: 768px){
@@ -480,12 +480,6 @@ textarea{
 		flex-direction: row;
 		flex-basis: 0;
 	}	
-
-	/* Página Recomendaciones */
-	.restauranteTxt{
-		text-align: left;
-		margin-left: 3rem;
-	}
 }
 
 /* lg breakpoint */
@@ -496,25 +490,6 @@ textarea{
 		font-size: 1.5rem;
 		margin-left: 1rem;
 		margin-right: 1rem;
-	}
-
-	/*Recomendaciones */
-		.listaRestaurantes .imageBoxBlackReco, .listaRestaurantes .imageBoxWhite{
-		border: 1.5rem solid white;
-		background-color: white;
-		color: black;
-	}
-
-		.listaRestaurantes .imageBoxBlackReco a, .listaRestaurantes .imageBoxWhite a{
-			color: black;
-		}
-
-		.listaRestaurantes .imageBoxBlackReco h3, .listaRestaurantes .imageBoxWhite h3{
-			color: black;
-		}
-
-		.restauranteTxt{
-		text-align: center;
 	}
 }
 
