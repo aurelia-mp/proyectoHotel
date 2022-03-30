@@ -1,0 +1,551 @@
+// OLD CSS
+
+/* Estilos generales */
+
+*{
+	font-family: Lato, sans-serif;
+}	
+
+html{
+	font-size:  62.5%;
+}
+
+body{
+	font-size: 2rem;
+	line-height: 3rem;
+	color:  #212A31;
+}
+
+a{
+	color:  #212A31;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	margin-bottom: 3rem;
+}	
+
+ol, ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*****************
+  Footer
+******************/
+.footer{
+	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0;
+	font-size: 1.6rem;
+}
+
+.redes{
+	margin-top: 1rem;
+}
+
+	.redes a i{
+			margin: 0 15px;
+			color: white;
+			height: 30px;
+		}
+
+	.redes a img{
+			margin: 0 15px 3px 15px;
+			height: 14px;
+		}
+
+			.redes a i:hover,
+			.redes a img:hover{
+			transform: scale(1.3);
+		}
+
+/***********************************************************
+  Estilos de header
+  Para páginas Contacto - Recomendaciones - Green
+************************************************************/
+.header{
+	grid-area: header;
+}
+
+	.header img{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.header h1{
+		text-align: center;
+	}
+
+/*************************
+  Estilos de botones
+**************************/
+
+.btn-grad, .btn-grad-reset{
+	border: none;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;         
+  box-shadow: 0 0 20px #eee;
+  border-radius: 0.3rem;
+  display: inline-block;
+  width: 40%;
+  color: #212A31; 
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #f1bd13 0%, #f8ca38  51%, #ffd753  100%)}
+	
+.btn-grad-reset {background-image: linear-gradient(to right, #cccccc 0%, #e0e0e0  51%, #f5f5f5  100%)}
+
+	.btn-grad-reset:hover, .btn-grad:hover{
+	  background-position: right center; /* change the direction of the change here */	
+	  text-decoration: none;
+	  font-weight: 700;
+	}	
+
+		.btn-grad-reset a:hover, .btn-grad a:hover{
+	  	color: black;
+		}	
+
+.botonHome{
+	font-size: 3rem;
+	margin-left: 0;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+	width: 70%;
+	box-shadow: none;
+}
+
+/*****************
+  Estilos de texto 
+******************/
+
+.textWhite{
+	color: whitesmoke;
+}
+
+.bgDark{
+	background-color: #212A31;
+}
+
+.titulo--xxl{
+	font-weight: 400;
+	font-size: 3.2rem;
+	line-height: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.titulo--xl{
+	font-weight: 300;
+	font-size: 2.5rem;
+}
+
+.titulo--md	{
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.titulo--sm	{
+	font-weight: 300;
+	font-size: 2.2rem;
+}
+
+/*************************
+  Estilos de contenedores
+**************************/
+	/* Estilo de caja para páginas Sustentabilidad y Info */
+
+.blackCard{
+	background-color: #212A31;
+	color: whitesmoke;
+	padding-bottom: 2rem;
+}
+
+	.blackCard h2{
+		color: #F1BD13;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.blackCard img{
+		padding: 3rem;
+	}
+
+	.blackCard ol{
+		list-style: none;
+	}
+
+		.blackCard ol li{
+			list-style: none;
+			margin: 2rem auto;
+			padding-left: 2rem;
+		}
+
+	.blackCard a{
+		color: whitesmoke;
+		text-decoration: underline;
+	}
+
+	.blackCard .card-body p{
+		margin: auto 2rem;
+	}
+
+
+/*****************
+	Homepage
+******************/
+
+.contenedorHome{
+	display: grid;
+	grid-template-areas: "nav" "mainHome" "footer";
+	background-image: url(../assets/entrada-vertical.jpg);
+	background-position: center 70%;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.mainHome{
+	grid-area: mainHome;
+}
+
+.homeTitle{
+	position: relative;
+	top: 35%;
+	background-color: rgba(245, 245, 245, 0.5);
+	text-align: center;
+}
+
+	.homeTitle h1{
+		font-weight: 700;
+		padding-top: 2rem;
+		margin: 2rem 0;
+	}
+
+	.homeTitle h2{
+		margin: 2rem 0;
+	}
+
+#footerHome{
+	height: 90px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+/*****************
+	Página Info
+******************/
+
+.introInfo{
+	padding: 4rem;
+	margin: 1rem;
+	border: 5px solid #212A31;
+	text-align: center;
+}
+
+	.introInfo span{
+		font-weight: 700;
+	}
+
+.blackCard[id="horarios"]{
+	padding: 3rem;
+	text-align: center;
+}
+
+#horarios table{
+	font-weight: 300;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+	#horarios table tr td:first-child{
+		text-align: left;
+	}
+
+	#horarios table tr td:nth-child(2){
+		text-align: right;
+	}
+
+
+#horarios tr{
+	height: 7rem;
+	border-bottom: 0.5px solid whitesmoke;
+}
+
+#downloads{
+	background-color: #fdf8e7;
+	padding: 2rem;
+}
+
+	#downloads ol{
+		margin-left: -2rem;
+	}
+
+	#downloads ol li a{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+
+
+/*****************
+  Página Sustentabilidad
+******************/
+
+.contenedorGreen{
+	display: grid;
+	grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer";
+}
+
+#introGreen{
+	grid-area: introGreen;
+}
+
+.card[id="introGreen"]{
+	border: 0px;
+}
+
+.mainGreen{
+	grid-area: mainGreen;
+	width: 97%;
+}
+
+.asideGreen{
+	grid-area: asideGreen;
+	margin-bottom: 3rem;
+	border: 5px solid #212A31;
+	padding: 2rem;
+}
+
+/*************************
+  Página Recomendaciones
+**************************/
+
+.whiteCard{
+	border: 0.5px solid #212A31;
+	padding-bottom: 2rem;
+}
+
+
+	.whiteCard .card-text{
+/*		padding-left: 1rem;*/
+	}
+
+	.whiteCard h2{
+		font-weight: 700;
+		color: #F1BD13;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.whiteCard img{
+		padding: 3rem;
+	}
+
+		.whiteCard img:hover{
+			transform: scale(1.03);
+			transition: all 0.5s;
+		}
+
+	.whiteCard .card-body p{
+		margin: auto 2rem;
+	}
+
+.datosReco{
+	padding-left: 0;
+	background-color: transparent;
+	text-align: left;
+	padding-top: 2rem;
+	margin-top: 2rem;
+	font-size: 1.7rem;
+	font-weight: 300;
+}
+
+	.datosReco a{
+		color: #2AA3D7;
+	}
+
+		.datosReco a:hover{
+		text-decoration: underline;
+		color: #2AA3D7;
+}
+
+
+/*****************
+  Página Contacto
+******************/
+
+.contenedorContacto{
+	display: grid;
+	grid-template-areas: "nav" "header" "mainContacto" "mapa" "footer";
+}
+
+.mainContacto{
+	grid-area: mainContacto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	font-weight: 300;
+	margin-bottom: 3rem;
+}
+
+	.mainContacto h2{
+		padding: 2rem 0;
+		border-top: 0.5px solid #212A31;
+		border-bottom: 0.5px solid #212A31;
+		text-align: center;
+	}
+	
+.mapa{
+	grid-area: mapa;
+	margin-bottom: 3rem;
+}
+
+	.mapa iframe{
+		width: 100%;
+		height: 50vh;
+		border-width: 0;
+	}
+
+.form-select, .form-control{
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+
+textarea{
+	height: 15vh;
+}
+
+
+/*****************
+  Media Queries
+******************/
+
+/* ipad only */ 
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	.whiteCard img{
+		padding: 0;
+	}
+}
+
+/* ipad */
+
+@media only screen and (min-width: 768px){
+	/* Footer en una sola línea */
+	.footer{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 4rem;
+	}
+
+	/* Página INFO */
+	.mainInfo{
+		flex-direction: row;
+		flex-basis: 0;
+	}	
+}
+
+/* lg breakpoint */
+@media only screen and (min-width: 992px){
+	/*nav bar */
+
+	.navbar-nav .nav-item .nav-link{
+		font-size: 1.5rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1024px){
+	/* Homepage */
+
+	.contenedorHome{
+		background-image: url(../assets/entrada-horizontal.jpg);
+		background-size: cover;
+		background-position: center 20%;
+	}
+
+	.homeTitle{
+		position: relative;
+		top: 0;
+		background-color: transparent;
+		color: whitesmoke;
+		width: 35%;
+		text-align: left;
+		margin-left: 7rem;
+	}
+
+		.homeTitle h1{
+			font-size: 5rem;
+			line-height: 6rem;
+			margin-bottom: 4rem;
+		}
+
+		.homeTitle h2{
+			margin-bottom: 4rem;
+		}
+
+		#footerHome{
+			height: 50px;
+		}
+
+			#footerHome .wifi{
+				margin-left: 3rem;
+			}
+
+	/* Página Sustentabilidad */
+	.contenedorGreen{
+		grid-template-areas: "nav nav"
+							 "header header"
+							 "introGreen asideGreen"
+							 "mainGreen mainGreen"
+							 "footer footer";
+		grid-template-columns: 3fr 1fr;
+	}
+
+	.asideGreen{
+		font-size: 1.5rem;
+		margin-left: 3rem;
+		margin-right: 1rem;
+		margin-bottom: 0;
+	}
+
+	/* Página contacto */
+	.contenedorContacto{
+		grid-template-areas: "nav nav"
+							 "header header"
+							 "mapa mainContacto"
+							 "footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 3rem;
+	}
+
+	.mapa iframe{
+		height: 100%;
+	}
+
+	/* Footer */
+
+	.footer{
+		margin-top: 3rem;
+	}
+}

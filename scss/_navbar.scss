@@ -1,0 +1,19 @@
+.nav {
+	grid-area: nav; 
+}
+
+.navbar-nav .nav-item .nav-link {
+	color: $mainColor; 
+
+	&:hover{
+		color:$secondaryColor;
+	}
+}
+
+.navbar-toggler-icon {
+	font-size: 2rem; 
+}
+
+.bg-whitesmoke{
+	background-color:$lightColor;
+}
