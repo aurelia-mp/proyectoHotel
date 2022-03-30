@@ -305,7 +305,7 @@ ol, ul{
 	}
 
 	#horarios table tr td:nth-child(2){
-		text-align: left;
+		text-align: right;
 	}
 
 
@@ -385,6 +385,11 @@ ol, ul{
 		padding: 3rem;
 	}
 
+		.whiteCard img:hover{
+			transform: scale(1.03);
+			transition: all 0.5s;
+		}
+
 	.whiteCard .card-body p{
 		margin: auto 2rem;
 	}
@@ -400,6 +405,10 @@ ol, ul{
 }
 
 	.datosReco a{
+		color: #2AA3D7;
+	}
+
+		.datosReco a:hover{
 		text-decoration: underline;
 		color: #2AA3D7;
 }
