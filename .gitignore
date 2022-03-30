@@ -1,2 +1,3 @@
 # ignorar la carpeta PRUEBAS
 /PRUEBAS
+/node_modules
