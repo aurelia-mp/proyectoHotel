@@ -14,6 +14,18 @@
 	@media only screen and (min-width: 1024px){
 		margin-top: 3rem;
 	}
+	&[id="footerHome"]{
+		height: 90px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		@media only screen and (min-width: 1024px){
+			height: 50px;			
+		}
+		.wifi{
+			margin-left: 3rem;
+		}
+	}
 }
 
 .redes{

@@ -9,4 +9,30 @@ $textLg: 2.5rem;
 $textXl: 3rem;
 $textXxl: 5rem;
 
+/* Estilos de texto y títulos */
+.textWhite{
+	color: $lightColor;
+}
 
+.titulo--xxl{
+	font-weight: 400;
+	font-size: $textXl;
+	line-height: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.titulo--xl{
+	font-weight: 300;
+	font-size: $textLg;
+}
+
+.titulo--md	{
+	font-weight: 700;
+	font-size: $textMd;
+}
+
+.titulo--sm	{
+	font-weight: 300;
+	font-size: 2.2rem;
+}

@@ -48,7 +48,7 @@
 			<div>
 				<img src="../assets/pileta.jpg" alt="Pileta en la terraza">
 			</div>
-			<div class="introInfo">
+			<div class="headerInfo-intro">
 				<h1 class="text-uppercase titulo--xxl">¡Feliz estadía!</h1>
 				<p>¡Bienvenido/a! Esperamos que tengas una excelente estadía con nosotros. A continuación, encontrarás <span>información práctica de horarios y servicios que encontrarás en el hotel. </span></p>
 				<br>
@@ -56,11 +56,11 @@
 			</div>
 		</header>
 
-		<!-- Contenido principal de la página -->
-		<div class="container-fluid" id="contenedorInfo">
+		<!-- Empieza contenedor principal -->
+		<div class="container-fluid contenedorInfo">
 			<div class="row justify-content-center">
-				<!-- Parte principal -->
-				<main class="col-sm-12 col-lg-10" id="mainInfo">
+				<!-- Empieza parte principal : Horarios - Prohibido Fumar - Servicios Adicionales -->
+				<main class="col-sm-12 col-lg-10 mainInfo">
 					<div class="container-fluid">
 						<!-- Fila 1: horarios y no fumar -->
 						<div class="row mb-3 align-items-center">
@@ -107,29 +107,30 @@
 						</div>
 						<!-- Fila 2: Servicios adicionales -->
 						<section class="row">
-							<div class="col-12">
+							<div class="col-12" id="adicionales">
 								<div class="card mb-3">
-								  <div class="row g-0 blackCard text-md-center align-items-center">
-								    <div class="col-md-6">
-								      <img src="../assets/bici.jpg" class="img-fluid rounded-start" alt="bicicleta">
-								    </div>
-								    <div class="col-md-6">
-								      <div class="card-body">
-								        <h2 class="card-title titulo--xl text-uppercase">Servicios adicionales</h2>
-								        <ol class="card-text fw-light">
+								<div class="row g-0 blackCard text-md-center align-items-center">
+									<div class="col-md-6">
+									<img src="../assets/bici.jpg" class="img-fluid rounded-start" alt="bicicleta">
+									</div>
+									<div class="col-md-6">
+									<div class="card-body">
+										<h2 class="card-title titulo--xl text-uppercase">Servicios adicionales</h2>
+										<ol class="card-text fw-light">
 											<li>Masajes en la habitación</li>
 											<li>Bicicletas a disposición</li>
 											<li>Transfer hasta / desde el aeropuerto. Para reservar este servicio, completá <a href="contacto.html">este formulario</a>.</li>
 										</ol>
-								      </div>
-								    </div>
-								  </div>
+									</div>
+									</div>
+								</div>
 								</div>
 															
 							</div>
 						</section>
 					</div>
 				</main>
+				<!-- Termina parte principal -->
 
 				<!-- Aside - Descargas -->
 				<aside class="col-lg-2" id="downloads">
@@ -163,6 +164,8 @@
 				</aside>
 			</div>
 		</div>
+		<!-- Termina contenedor principal -->
+
 
 		<!-- Footer con redes sociales y datos WiFi -->
 		<footer class ="footer textWhite bgDark">

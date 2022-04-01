@@ -8,6 +8,30 @@
 
 /* Google Fonts */
 /* Tamaños de texto */
+/* Estilos de texto y títulos */
+.textWhite {
+  color: whitesmoke; }
+
+.titulo--xxl {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.titulo--xl {
+  font-weight: 300;
+  font-size: 2.5rem; }
+
+.titulo--md {
+  font-weight: 700;
+  font-size: 2rem; }
+
+.titulo--sm {
+  font-weight: 300;
+  font-size: 2.2rem; }
+
+/* Estilos de la barra de navegación */
 .nav {
   grid-area: nav; }
 
@@ -27,6 +51,24 @@
 .bg-white {
   background-color: white; }
 
+/*  Estilos de header - Usado en todas las páginas salvo el index */
+.header {
+  grid-area: header;
+  /* Estilo específico de la página info */ }
+  .header img {
+    width: 100%;
+    margin-bottom: 1rem; }
+  .header h1 {
+    text-align: center; }
+  .header .headerInfo-intro {
+    padding: 4rem;
+    margin: 1rem;
+    border: 5px solid #212A31;
+    text-align: center; }
+    .header .headerInfo-intro span {
+      font-weight: 700; }
+
+/* Estilos generales  + Botones + Cards */
 /* Estilos generales */
 * {
   font-family: Lato, sans-serif; }
@@ -55,21 +97,10 @@ ol, ul {
   margin: 0;
   padding: 0; }
 
-/****************************
-  Estilos de header
-  Para páginas internas
-*****************************/
-.header {
-  grid-area: header; }
-  .header img {
-    width: 100%;
-    margin-bottom: 1rem; }
-  .header h1 {
-    text-align: center; }
+.bgDark {
+  background-color: #212A31; }
 
-/*************************
-  Estilos de botones
-**************************/
+/* Estilos de botones */
 .btn-grad, .btn-grad-reset {
   border: none;
   margin: 1rem;
@@ -109,38 +140,7 @@ ol, ul {
   width: 70%;
   box-shadow: none; }
 
-/*****************
-  Estilos de texto 
-******************/
-.textWhite {
-  color: whitesmoke; }
-
-.bgDark {
-  background-color: #212A31; }
-
-.titulo--xxl {
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 4rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-
-.titulo--xl {
-  font-weight: 300;
-  font-size: 2.5rem; }
-
-.titulo--md {
-  font-weight: 700;
-  font-size: 2rem; }
-
-.titulo--sm {
-  font-weight: 300;
-  font-size: 2.2rem; }
-
-/*************************
-  Estilos de contenedores
-**************************/
-/* Estilo de caja para páginas Sustentabilidad y Info */
+/* Estilos de cajas - cards - usado en páginas Sustentabilidad y Info   */
 .blackCard {
   background-color: #212A31;
   color: whitesmoke;
@@ -163,93 +163,99 @@ ol, ul {
   .blackCard .card-body p {
     margin: auto 2rem; }
 
-/*****************
-	Página Info
-******************/
-#contenedorInfo {
-  padding: 1rem; }
-
-#mainInfo {
-  padding: 0;
-  margin: 0;
-  /* Sacando padding a la última fila - Servicios Adicionales */ }
-  #mainInfo .col-12 {
-    padding: 0; }
-
-.introInfo {
-  padding: 4rem;
-  margin: 1rem;
-  border: 5px solid #212A31;
-  text-align: center; }
-  .introInfo span {
-    font-weight: 700; }
-
-.blackCard[id="horarios"] {
-  padding: 3rem;
-  text-align: center; }
-
-#horarios table {
-  font-weight: 300;
-  width: 100%;
-  border-collapse: collapse; }
-
-#horarios tr {
-  height: 7rem;
-  border-bottom: 0.5px solid whitesmoke; }
-  #horarios tr td:first-child {
-    text-align: left; }
-  #horarios tr td:nth-child(2) {
-    text-align: right; }
-
-#downloads {
-  background-color: #fdf8e7;
-  padding: 2rem; }
-  @media only screen and (min-width: 992px) {
-    #downloads {
-      margin: 0; } }
-  @media only screen and (min-width: 992px) {
-    #downloads li {
-      margin: 1rem auto; } }
-  #downloads li a {
-    color: #212A31;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem; }
-    #downloads li a i {
-      font-size: 5rem; }
-      @media only screen and (max-width: 440px) {
-        #downloads li a i {
-          font-size: 2.5rem; } }
-      #downloads li a i:hover {
-        transform: scale(1.1); }
-
-/*****************
-  Página Sustentabilidad
-******************/
-.contenedorGreen {
+.contenedorHome {
   display: grid;
-  grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer"; }
+  grid-template-areas: "nav" "mainHome" "footer";
+  background-image: url(../assets/entrada-vertical.jpg);
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  @media only screen and (min-width: 1024px) {
+    .contenedorHome {
+      background-image: url(../assets/entrada-horizontal.jpg);
+      background-size: cover;
+      background-position: center 20%; } }
 
-#introGreen {
-  grid-area: introGreen; }
+.mainHome {
+  grid-area: mainHome; }
+  .mainHome .homeTitle {
+    position: relative;
+    top: 35%;
+    background-color: rgba(245, 245, 245, 0.5);
+    text-align: center; }
+    @media only screen and (min-width: 1024px) {
+      .mainHome .homeTitle {
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        color: whitesmoke;
+        width: 35%;
+        text-align: left;
+        margin-left: 7rem; } }
+    .mainHome .homeTitle h1 {
+      font-weight: 700;
+      padding-top: 2rem;
+      margin: 2rem 0; }
+      @media only screen and (min-width: 1024px) {
+        .mainHome .homeTitle h1 {
+          font-size: 5rem;
+          line-height: 6rem;
+          margin-bottom: 4rem; } }
+    .mainHome .homeTitle h2 {
+      margin: 2rem 0; }
+      @media only screen and (min-width: 1024px) {
+        .mainHome .homeTitle h2 {
+          margin-bottom: 4rem; } }
 
-.card[id="introGreen"] {
-  border: 0px; }
+.contenedorInfo {
+  /* Estilos de la sección Downloads */ }
+  .contenedorInfo .row {
+    padding: 1rem; }
+  .contenedorInfo .mainInfo {
+    padding: 0;
+    margin: 0;
+    /* Estilo de tabla de Horarios */
+    /* Sacando padding a la última fila - Servicios Adicionales */ }
+    .contenedorInfo .mainInfo #horarios table {
+      font-weight: 300;
+      width: 100%;
+      border-collapse: collapse; }
+    .contenedorInfo .mainInfo #horarios tr {
+      height: 7rem;
+      border-bottom: 0.5px solid whitesmoke; }
+      .contenedorInfo .mainInfo #horarios tr td:first-child {
+        text-align: left; }
+      .contenedorInfo .mainInfo #horarios tr td:nth-child(2) {
+        text-align: right; }
+    .contenedorInfo .mainInfo .blackCard[id="horarios"] {
+      padding: 3rem;
+      text-align: center; }
+    .contenedorInfo .mainInfo #adicionales {
+      padding: 0; }
+  .contenedorInfo #downloads {
+    background-color: #fdf8e7;
+    padding: 2rem; }
+    @media only screen and (min-width: 992px) {
+      .contenedorInfo #downloads {
+        margin: 0; } }
+    @media only screen and (min-width: 992px) {
+      .contenedorInfo #downloads li {
+        margin: 1rem auto; } }
+    .contenedorInfo #downloads li a {
+      color: #212A31;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem; }
+      .contenedorInfo #downloads li a i {
+        font-size: 5rem; }
+        @media only screen and (max-width: 440px) {
+          .contenedorInfo #downloads li a i {
+            font-size: 2.5rem; } }
+        .contenedorInfo #downloads li a i:hover {
+          transform: scale(1.1); }
 
-.mainGreen {
-  grid-area: mainGreen;
-  width: 97%; }
-
-.asideGreen {
-  grid-area: asideGreen;
-  margin-bottom: 3rem;
-  border: 5px solid #212A31;
-  padding: 2rem; }
-
-/*************************
-  Página Recomendaciones
-**************************/
+/* Estilo de card para la lista de Restaurantes */
 .whiteCard {
   border: 0.5px solid #212A31;
   padding-bottom: 2rem; }
@@ -269,28 +275,58 @@ ol, ul {
         padding: 0; } }
   .whiteCard .card-body p {
     margin: auto 2rem; }
-
-.datosReco {
-  padding-left: 0;
-  background-color: transparent;
-  text-align: left;
-  padding-top: 2rem;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  font-weight: 300; }
-  .datosReco a {
-    color: #2AA3D7; }
-    .datosReco a:hover {
-      text-decoration: underline;
+  .whiteCard .datosReco {
+    padding-left: 0;
+    background-color: transparent;
+    text-align: left;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300; }
+    .whiteCard .datosReco a {
       color: #2AA3D7; }
+      .whiteCard .datosReco a:hover {
+        text-decoration: underline;
+        color: #2AA3D7; }
 
-/*****************
-  Página Contacto
-******************/
+/* Grid */
+.contenedorGreen {
+  display: grid;
+  grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer"; }
+  @media only screen and (min-width: 1024px) {
+    .contenedorGreen {
+      grid-template-areas: "nav nav" "header header" "introGreen asideGreen" "mainGreen mainGreen" "footer footer";
+      grid-template-columns: 3fr 1fr; } }
+  .contenedorGreen #introGreen {
+    grid-area: introGreen; }
+  .contenedorGreen .card[id="introGreen"] {
+    border: 0px; }
+  .contenedorGreen .mainGreen {
+    grid-area: mainGreen;
+    width: 97%; }
+  .contenedorGreen .asideGreen {
+    grid-area: asideGreen;
+    margin-bottom: 3rem;
+    border: 5px solid #212A31;
+    padding: 2rem; }
+    @media only screen and (min-width: 1024px) {
+      .contenedorGreen .asideGreen {
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        margin-right: 1rem;
+        margin-bottom: 0; } }
+
+/* Grid */
 .contenedorContacto {
   display: grid;
   grid-template-areas: "nav" "header" "mainContacto" "mapa" "footer"; }
+  @media only screen and (min-width: 1024px) {
+    .contenedorContacto {
+      grid-template-areas: "nav nav" "header header" "mapa mainContacto" "footer footer";
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 3rem; } }
 
+/* Formulario de contacto */
 .mainContacto {
   grid-area: mainContacto;
   display: flex;
@@ -305,7 +341,13 @@ ol, ul {
     border-top: 0.5px solid #212A31;
     border-bottom: 0.5px solid #212A31;
     text-align: center; }
+  .mainContacto .form-select, .mainContacto .form-control {
+    font-size: 1.5rem;
+    font-weight: 300; }
+  .mainContacto textarea {
+    height: 15vh; }
 
+/* Mapa */
 .mapa {
   grid-area: mapa;
   margin-bottom: 3rem; }
@@ -313,98 +355,9 @@ ol, ul {
     width: 100%;
     height: 50vh;
     border-width: 0; }
-
-.form-select, .form-control {
-  font-size: 1.5rem;
-  font-weight: 300; }
-
-textarea {
-  height: 15vh; }
-
-/*****************
-  Media Queries
-******************/
-/* ipad */
-@media only screen and (min-width: 768px) {
-  /* Página INFO */
-  .mainInfo {
-    flex-direction: row;
-    flex-basis: 0; } }
-
-/* desktop */
-@media only screen and (min-width: 1024px) {
-  /* Página Sustentabilidad */
-  .contenedorGreen {
-    grid-template-areas: "nav nav" "header header" "introGreen asideGreen" "mainGreen mainGreen" "footer footer";
-    grid-template-columns: 3fr 1fr; }
-  .asideGreen {
-    font-size: 1.5rem;
-    margin-left: 3rem;
-    margin-right: 1rem;
-    margin-bottom: 0; }
-  /* Página contacto */
-  .contenedorContacto {
-    grid-template-areas: "nav nav" "header header" "mapa mainContacto" "footer footer";
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem; }
-  .mapa iframe {
-    height: 100%; } }
-
-.contenedorHome {
-  display: grid;
-  grid-template-areas: "nav" "mainHome" "footer";
-  background-image: url(../assets/entrada-vertical.jpg);
-  background-position: center 70%;
-  background-repeat: no-repeat;
-  height: 100vh; }
-  @media only screen and (min-width: 1024px) {
-    .contenedorHome {
-      background-image: url(../assets/entrada-horizontal.jpg);
-      background-size: cover;
-      background-position: center 20%; } }
-
-.mainHome {
-  grid-area: mainHome; }
-
-.homeTitle {
-  position: relative;
-  top: 35%;
-  background-color: rgba(245, 245, 245, 0.5);
-  text-align: center; }
-  @media only screen and (min-width: 1024px) {
-    .homeTitle {
-      position: relative;
-      top: 0;
-      background-color: transparent;
-      color: whitesmoke;
-      width: 35%;
-      text-align: left;
-      margin-left: 7rem; } }
-  .homeTitle h1 {
-    font-weight: 700;
-    padding-top: 2rem;
-    margin: 2rem 0; }
     @media only screen and (min-width: 1024px) {
-      .homeTitle h1 {
-        font-size: 5rem;
-        line-height: 6rem;
-        margin-bottom: 4rem; } }
-  .homeTitle h2 {
-    margin: 2rem 0; }
-    @media only screen and (min-width: 1024px) {
-      .homeTitle h2 {
-        margin-bottom: 4rem; } }
-
-#footerHome {
-  height: 90px;
-  width: 100%;
-  position: absolute;
-  bottom: 0; }
-  @media only screen and (min-width: 1024px) {
-    #footerHome {
-      height: 50px; } }
-  #footerHome .wifi {
-    margin-left: 3rem; }
+      .mapa iframe {
+        height: 100%; } }
 
 .footer {
   grid-area: footer;
@@ -422,6 +375,16 @@ textarea {
   @media only screen and (min-width: 1024px) {
     .footer {
       margin-top: 3rem; } }
+  .footer[id="footerHome"] {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    @media only screen and (min-width: 1024px) {
+      .footer[id="footerHome"] {
+        height: 50px; } }
+    .footer[id="footerHome"] .wifi {
+      margin-left: 3rem; }
 
 .redes {
   margin-top: 1rem; }

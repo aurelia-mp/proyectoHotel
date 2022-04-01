@@ -1,0 +1,71 @@
+.contenedorInfo{
+	.row{
+		padding: 1rem;
+	}
+	.mainInfo{
+		padding:0;
+		margin:0;
+		/* Estilo de tabla de Horarios */
+		#horarios{
+			table{
+				font-weight: 300;
+				width: 100%;
+				border-collapse: collapse;
+			}
+		
+			tr{
+				height: 7rem;
+				border-bottom: 0.5px solid $lightColor;
+				td:first-child{
+					text-align: left;
+				}
+				td:nth-child(2){
+					text-align: right;
+				}
+			}
+		}
+		.blackCard{
+			&[id="horarios"]{
+			padding: 3rem;
+			text-align: center;
+			}
+		}
+
+		/* Sacando padding a la última fila - Servicios Adicionales */
+		#adicionales{
+			padding:0;
+		}
+		
+	}
+	/* Estilos de la sección Downloads */
+	#downloads{
+		background-color: #fdf8e7;
+		padding: 2rem;
+		@media only screen and (min-width: 992px){
+			margin:0;
+			
+		}
+			 li{
+				 @media only screen and (min-width: 992px){
+					margin: 1rem auto;
+				}
+				a{
+					color: $mainColor;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-bottom: 2rem;
+					i{
+						font-size: $textXxl;
+						@media only screen and (max-width: 440px){
+							font-size: $textLg;
+						}
+						&:hover{
+							transform:scale(1.1);
+						}
+					}
+				} 
+			}
+	}
+	
+}

@@ -14,51 +14,36 @@
 
 .mainHome{
 	grid-area: mainHome;
-}
-
-.homeTitle{
-	position: relative;
-	top: 35%;
-	background-color: rgba(245, 245, 245, 0.5);
-	text-align: center;
-	@media only screen and (min-width: 1024px){
+	.homeTitle{
 		position: relative;
-		top: 0;
-		background-color: transparent;
-		color: $lightColor;
-		width: 35%;
-		text-align: left;
-		margin-left: 7rem;
-	}
-
-	h1{
-		font-weight: 700;
-		padding-top: 2rem;
-		margin: 2rem 0;
+		top: 35%;
+		background-color: rgba(245, 245, 245, 0.5);
+		text-align: center;
 		@media only screen and (min-width: 1024px){
-			font-size: $textXxl;
-			line-height: 6rem;
-			margin-bottom: 4rem;
+			position: relative;
+			top: 0;
+			background-color: transparent;
+			color: $lightColor;
+			width: 35%;
+			text-align: left;
+			margin-left: 7rem;
 		}
-	}
-
-	h2{
-		margin: 2rem 0;
-		@media only screen and (min-width: 1024px){
-			margin-bottom: 4rem;
+		h1{
+			font-weight: 700;
+			padding-top: 2rem;
+			margin: 2rem 0;
+			@media only screen and (min-width: 1024px){
+				font-size: $textXxl;
+				line-height: 6rem;
+				margin-bottom: 4rem;
+			}
+		}
+		h2{
+			margin: 2rem 0;
+			@media only screen and (min-width: 1024px){
+				margin-bottom: 4rem;
+			}
 		}
 	}
 }
 
-#footerHome{
-	height: 90px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	@media only screen and (min-width: 1024px){
-		height: 50px;
-	}
-	.wifi{
-		margin-left: 3rem;
-	}
-}
