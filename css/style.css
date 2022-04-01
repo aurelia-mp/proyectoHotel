@@ -144,7 +144,8 @@ ol, ul {
 .blackCard {
   background-color: #212A31;
   color: whitesmoke;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  /* Estilo específico para la blackCard de la página Info */ }
   .blackCard h2 {
     color: #F1BD13;
     margin-left: 2rem;
@@ -155,13 +156,16 @@ ol, ul {
     list-style: none; }
     .blackCard ol li {
       list-style: none;
-      margin: 2rem auto;
+      margin: 1.5rem auto;
       padding-left: 2rem; }
   .blackCard a {
     color: whitesmoke;
     text-decoration: underline; }
   .blackCard .card-body p {
     margin: auto 2rem; }
+  .blackCard[id="horarios"] {
+    padding: 3rem;
+    text-align: center; }
 
 .contenedorHome {
   display: grid;
@@ -209,13 +213,14 @@ ol, ul {
 
 .contenedorInfo {
   /* Estilos de la sección Downloads */ }
-  .contenedorInfo .row {
-    padding: 1rem; }
   .contenedorInfo .mainInfo {
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     /* Estilo de tabla de Horarios */
     /* Sacando padding a la última fila - Servicios Adicionales */ }
+    @media only screen and (min-width: 992px) {
+      .contenedorInfo .mainInfo {
+        padding: 0rem; } }
     .contenedorInfo .mainInfo #horarios table {
       font-weight: 300;
       width: 100%;
@@ -227,32 +232,31 @@ ol, ul {
         text-align: left; }
       .contenedorInfo .mainInfo #horarios tr td:nth-child(2) {
         text-align: right; }
-    .contenedorInfo .mainInfo .blackCard[id="horarios"] {
-      padding: 3rem;
-      text-align: center; }
     .contenedorInfo .mainInfo #adicionales {
       padding: 0; }
-  .contenedorInfo #downloads {
+  .contenedorInfo #downloads .row {
     background-color: #fdf8e7;
+    margin: 1rem;
     padding: 2rem; }
     @media only screen and (min-width: 992px) {
-      .contenedorInfo #downloads {
-        margin: 0; } }
+      .contenedorInfo #downloads .row {
+        margin: 0;
+        height: 100%; } }
     @media only screen and (min-width: 992px) {
-      .contenedorInfo #downloads li {
-        margin: 1rem auto; } }
-    .contenedorInfo #downloads li a {
+      .contenedorInfo #downloads .row li {
+        margin: 1rem 0 1rem -0.5rem; } }
+    .contenedorInfo #downloads .row li a {
       color: #212A31;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 2rem; }
-      .contenedorInfo #downloads li a i {
+      .contenedorInfo #downloads .row li a i {
         font-size: 5rem; }
         @media only screen and (max-width: 440px) {
-          .contenedorInfo #downloads li a i {
+          .contenedorInfo #downloads .row li a i {
             font-size: 2.5rem; } }
-        .contenedorInfo #downloads li a i:hover {
+        .contenedorInfo #downloads .row li a i:hover {
           transform: scale(1.1); }
 
 /* Estilo de card para la lista de Restaurantes */
