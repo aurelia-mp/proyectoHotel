@@ -1,0 +1,49 @@
+/* Estilo de card para la lista de Restaurantes */
+.whiteCard{
+	border: 0.5px solid $mainColor;
+	padding-bottom: 2rem;
+
+	h2{
+		font-weight: 700;
+		color: $secondaryColor;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	img{
+		padding: 3rem;
+		&:hover{
+			transform: scale(1.03);
+			transition: all 0.5s;
+		}
+		/* ipad only */ 
+		@media only screen and (min-width: 768px) and (max-width: 992px){
+			padding: 0;
+		}
+	}
+
+	.card-body{
+		p{
+			margin: auto 2rem;
+		}
+	} 
+
+    .datosReco{
+        padding-left: 0;
+        background-color: transparent;
+        text-align: left;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        font-size: $textSm;
+        font-weight: 300;
+        a{
+            color: #2AA3D7;
+            &:hover{
+                text-decoration: underline;
+                color: #2AA3D7;
+            }
+        }
+    }
+}
+
+

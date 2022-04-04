@@ -1,0 +1,51 @@
+.footer{
+	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0;
+	font-size: $textSm;
+	@media only screen and (min-width: 768px){
+	/* Footer en una sola línea */
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 4rem;
+	}
+	@media only screen and (min-width: 1024px){
+		margin-top: 3rem;
+	}
+	&[id="footerHome"]{
+		height: 90px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		@media only screen and (min-width: 1024px){
+			height: 50px;			
+		}
+		.wifi{
+			margin-left: 3rem;
+		}
+	}
+}
+
+.redes{
+	margin-top: 1rem;
+	a{
+		i{
+			margin: 0 15px;
+			color: $lightColor;
+			height: 30px;
+			&:hover{
+				transform: scale(1.3);
+			}
+		}
+
+		img{
+			margin: 0 15px 3px 15px;
+			height: 14px;
+			&:hover{
+				transform: scale(1.3);
+			}
+		}
+	}
+}

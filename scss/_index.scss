@@ -1,0 +1,49 @@
+.contenedorHome{
+	display: grid;
+	grid-template-areas: "nav" "mainHome" "footer";
+	background-image: url(../assets/entrada-vertical.jpg);
+	background-position: center 70%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	@media only screen and (min-width: 1024px){
+		background-image: url(../assets/entrada-horizontal.jpg);
+		background-size: cover;
+		background-position: center 20%;
+	}
+}
+
+.mainHome{
+	grid-area: mainHome;
+	.homeTitle{
+		position: relative;
+		top: 35%;
+		background-color: rgba(245, 245, 245, 0.5);
+		text-align: center;
+		@media only screen and (min-width: 1024px){
+			position: relative;
+			top: 0;
+			background-color: transparent;
+			color: $lightColor;
+			width: 35%;
+			text-align: left;
+			margin-left: 7rem;
+		}
+		h1{
+			font-weight: 700;
+			padding-top: 2rem;
+			margin: 2rem 0;
+			@media only screen and (min-width: 1024px){
+				font-size: $textXxl;
+				line-height: 6rem;
+				margin-bottom: 4rem;
+			}
+		}
+		h2{
+			margin: 2rem 0;
+			@media only screen and (min-width: 1024px){
+				margin-bottom: 4rem;
+			}
+		}
+	}
+}
+
