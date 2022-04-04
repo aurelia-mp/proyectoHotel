@@ -308,6 +308,12 @@ ol, ul {
   .contenedorGreen .mainGreen {
     grid-area: mainGreen;
     width: 97%; }
+    .contenedorGreen .mainGreen .accordion-button:not(.collapsed) {
+      background-color: white;
+      color: #F1BD13; }
+    .contenedorGreen .mainGreen .accordion-button:focus {
+      border: none;
+      box-shadow: 0 0 0 0.1rem rgba(241, 189, 19, 0.25); }
   .contenedorGreen .asideGreen {
     grid-area: asideGreen;
     margin-bottom: 3rem;
