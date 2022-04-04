@@ -32,14 +32,15 @@
 		
 	}
 	/* Estilos de la sección Downloads */
-	#downloads .row{
-		background-color: #fdf8e7;
-		margin: 1rem;
-		padding: 2rem;
-		@media only screen and (min-width: 992px){
-			margin:0;
-			height: 100%;
-		}
+	#downloads {
+		.row{
+			background-color: #fdf8e7;
+			margin: 1rem;
+			padding: 2rem;
+			@media only screen and (min-width: 992px){
+				margin:0;
+				height: 100%;
+			}
 			li{
 				@media only screen and (min-width: 992px){
 					margin: 1rem 0 1rem -0.5rem;
@@ -61,5 +62,6 @@
 					}
 				} 
 			}
+		}
 	}
 }
