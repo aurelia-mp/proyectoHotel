@@ -393,17 +393,16 @@ ul {
         height: 50px; } }
     .footer[id="footerHome"] .wifi {
       margin-left: 3rem; }
-
-.redes {
-  margin-top: 1rem; }
-  .redes a i {
-    margin: 0 15px;
-    color: whitesmoke;
-    height: 30px; }
-    .redes a i:hover {
-      transform: scale(1.3); }
-  .redes a img {
-    margin: 0 15px 3px 15px;
-    height: 14px; }
-    .redes a img:hover {
-      transform: scale(1.3); }
+  .footer .redes {
+    margin-top: 1rem; }
+    .footer .redes a i {
+      margin: 0 15px;
+      color: whitesmoke;
+      height: 30px; }
+      .footer .redes a i:hover {
+        transform: scale(1.3); }
+    .footer .redes a img {
+      margin: 0 15px 3px 15px;
+      height: 14px; }
+      .footer .redes a img:hover {
+        transform: scale(1.3); }
