@@ -1,0 +1,67 @@
+/* Estilos de cards */
+
+.customCard{
+	padding-bottom: 2rem;
+	h2{
+		color: map-get($paleta, 'secondary');
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+	img{
+		padding: 3rem;
+	  &:hover{
+		transform: scale(1.03);
+		transition: all 0.5s;
+	  }
+	}
+	.card-body,
+	.card-footer{
+		p{
+			margin: auto 2rem;
+		}
+		a{
+			color: map-get($paleta, 'link');
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}	
+	}		
+}
+
+  /* Black Card: usada en páginas Sustentabilidad e Info */
+  .blackCard{
+	@extend .customCard;
+	background-color: map-get($paleta, 'main');
+	color: map-get($paleta, 'light');
+
+	ol{
+		list-style: none;
+	
+		li{
+			margin: 1.5rem auto;
+			padding-left: 2rem;
+		}
+	}
+		/* Estilo específico para la blackCard de la página Info */
+		&[id="horarios"]{
+			padding: 3rem;
+			text-align: center;
+			}
+	}
+
+/* Estilo de card para la página Recomendaciones */
+.whiteCard{
+	@extend .customCard;
+	border: 0.5px solid map-get($paleta, 'main');
+	
+    .datosReco{
+        padding-left: 0;
+        background-color: transparent;
+        text-align: left;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        font-size: $textSm;
+        font-weight: 300;
+    }
+}

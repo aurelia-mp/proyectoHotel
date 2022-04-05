@@ -1,14 +1,11 @@
 .footer{
 	grid-area: footer;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, flex-start, center);
 	padding: 1rem 0;
 	font-size: $textSm;
 	@media only screen and (min-width: 768px){
 	/* Footer en una sola línea */
-		flex-direction: row;
-		justify-content: space-between;
+		@include flex(row, space-between, center);
 		padding: 0 4rem;
 	}
 	@media only screen and (min-width: 1024px){
@@ -33,7 +30,7 @@
 	a{
 		i{
 			margin: 0 15px;
-			color: $lightColor;
+			color: map-get($paleta, 'light');
 			height: 30px;
 			&:hover{
 				transform: scale(1.3);

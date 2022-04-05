@@ -14,7 +14,7 @@
 	.headerInfo-intro{
 		padding: 4rem;
 		margin: 1rem;
-		border: 5px solid $mainColor;
+		border: 5px solid map-get($paleta, 'main');
 		text-align: center;
 
 		span{

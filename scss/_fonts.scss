@@ -10,29 +10,62 @@ $textXl: 3rem;
 $textXxl: 5rem;
 
 /* Estilos de texto y títulos */
+@mixin texto($font-weight, $font-size){
+	font-weight: $font-weight;
+	font-size: $font-size;
+}
+
 .textWhite{
-	color: $lightColor;
+	color: map-get($paleta, 'light');
 }
 
 .titulo--xxl{
-	font-weight: 400;
-	font-size: $textXl;
+	@include texto(400, $textXl);
 	line-height: 4rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
 .titulo--xl{
-	font-weight: 300;
-	font-size: $textLg;
+	@include texto(300, $textLg);
 }
 
 .titulo--md	{
-	font-weight: 700;
-	font-size: $textMd;
+	@include texto(700, $textMd);
 }
 
 .titulo--sm	{
-	font-weight: 300;
-	font-size: 2.2rem;
+	@include texto(300, $textMd);
+}
+
+/* Estilos generales */
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	font-size: $textMd;
+	line-height: 3rem;
+	color: map-get($paleta, 'main');
+}
+
+a{
+	color:map-get($paleta, 'main');
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	margin-bottom: 3rem;
+}	
+
+ol, 
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }

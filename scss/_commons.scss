@@ -1,12 +1,36 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    font-family: Lato, sans-serif;
   }
 
 /* Colores */
 
-$mainColor: #212A31;
-$secondaryColor: #F1BD13;
-$lightColor: whitesmoke
+$paleta:(
+  'main': rgb(33,42,49),
+  'secondary': rgb(241,189,19),
+  'light': rgb(245,245,245),
+  'link': rgb(42,163,215),
+  'white': white,
+  'black': black, 
+);
+
+$mainColor: rgb(33,42,49);
+$secondaryColor: rgb(241,189,19);
+$lightColor: rgb(245,245,245);
+$linkColor: rgb(42,163,215);
+
+/* Pendiente: transformar colores en una paleta - map */
+
+.bgDark{
+	background-color: $mainColor;
+}
+
+/* Mixin para Flexbox */
+@mixin flex($direccion, $justify, $align){
+  display:flex;
+  flex-direction: $direccion;
+  justify-content: $justify;
+  align-items: $align;
+}

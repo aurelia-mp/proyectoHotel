@@ -15,9 +15,7 @@
 /* Formulario de contacto */
 .mainContacto{
 	grid-area: mainContacto;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	@include flex(column, flex-start, stretch);
 	margin-left: 1rem;
 	margin-right: 1rem;
 	font-weight: 300;
@@ -25,8 +23,8 @@
 
 	h2{
 		padding: 2rem 0;
-		border-top: 0.5px solid $mainColor;
-		border-bottom: 0.5px solid $mainColor;
+		border-top: 0.5px solid map-get($paleta, 'main');
+		border-bottom: 0.5px solid map-get($paleta, 'main');
 		text-align: center;
 	}
 	.form-select, .form-control{

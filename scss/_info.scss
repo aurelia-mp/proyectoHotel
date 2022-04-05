@@ -15,7 +15,7 @@
 		
 			tr{
 				height: 7rem;
-				border-bottom: 0.5px solid $lightColor;
+				border-bottom: 0.5px solid map-get($paleta, 'light');
 				td:first-child{
 					text-align: left;
 				}
@@ -34,7 +34,8 @@
 	/* Estilos de la sección Downloads */
 	#downloads {
 		.row{
-			background-color: #fdf8e7;
+			background-color: transparentize(map-get($paleta, 'secondary'), $amount: 0.6);
+			// background-color: #fdf8e7;
 			margin: 1rem;
 			padding: 2rem;
 			@media only screen and (min-width: 992px){
@@ -46,10 +47,8 @@
 					margin: 1rem 0 1rem -0.5rem;
 				}
 				a{
-					color: $mainColor;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
+					color: map-get($paleta, 'main');
+					@include flex(column,center,center);
 					margin-bottom: 2rem;
 					i{
 						font-size: $textXxl;

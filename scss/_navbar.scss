@@ -2,24 +2,35 @@
 
 .nav {
     grid-area: nav; 
-  }
-  
-  .navbar-nav .nav-item .nav-link {
-    color: black; 
-    &:hover{
-      color:$secondaryColor
+    .navbar-brand{
+      .logo{
+        width: 75%;
+        @media only screen and (max-width: 320px){
+          width: 60%;
+          padding-left: 0;
+        }
+      }
     }
-    @media only screen and (min-width: 992px){
-      font-size: $textSm;
-      margin-left: 1rem;
-      margin-right: 1rem;
+    .navbar-toggler-icon {
+      font-size: $textMd; 
+    }
+    .navbar-nav{ 
+      .nav-item{
+        .nav-link{
+          color: map-get($paleta, 'main'); 
+          &:hover{
+            color:map-get($paleta, 'secondary');
+          }
+          @media only screen and (min-width: 992px){
+            font-size: $textSm;
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
+        }
+      }
     }
   }
   
-  .navbar-toggler-icon {
-    font-size: $textMd; 
-  }
-  
-  .bg-white {
-    background-color: white; 
-  }
+.bg-blanco {
+  background-color: map-get($paleta, 'white');
+}

@@ -1,0 +1,44 @@
+  /* Estilos de botones */
+  .boton{
+    border: none;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;         
+    box-shadow: 0 0 20px #eee;
+    border-radius: 0.3rem;
+    display: inline-block;
+    width: 40%;
+    color: map-get($paleta, 'main'); 
+    white-space: normal;
+    word-wrap: break-word;
+    &:hover{
+        background-position: right center; /* change the direction of the change here */	
+        text-decoration: none;
+        font-weight: 700;
+    }
+    // a{
+    //     &:hover{
+    //         color: black;
+    //     }
+    // }
+}
+
+.btn-grad{
+    @extend .boton;
+    background-image: linear-gradient(to right, map-get($paleta, 'secondary'), #f8ca38  51%, #ffd753  100%);
+}
+
+.btn-grad-reset{
+    @extend .boton;
+    background-image: linear-gradient(to right, #cccccc 0%, #e0e0e0  51%, map-get($paleta, 'light') 100%)
+}
+
+.botonHome{
+    @extend .btn-grad;
+    font-size: $textXl;
+    width: 70%;
+    box-shadow: none;
+}
