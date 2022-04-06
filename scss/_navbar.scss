@@ -7,7 +7,6 @@
         width: 75%;
         @media only screen and (max-width: 320px){
           width: 60%;
-          padding-left: 0;
         }
       }
     }
@@ -18,6 +17,7 @@
       .nav-item{
         .nav-link{
           color: map-get($paleta, 'main'); 
+          padding-left: 3rem;
           &:hover{
             color:map-get($paleta, 'secondary');
           }
@@ -25,6 +25,10 @@
             font-size: $textSm;
             margin-left: 1rem;
             margin-right: 1rem;
+            padding-left: 0;
+          }
+          @media only screen and (max-width: 576px){
+            padding-left: 0.5rem;
           }
         }
       }

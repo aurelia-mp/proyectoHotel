@@ -34,8 +34,8 @@
 	/* Estilos de la sección Downloads */
 	#downloads {
 		.row{
-			background-color: transparentize(map-get($paleta, 'secondary'), $amount: 0.6);
-			// background-color: #fdf8e7;
+			// background-color: transparentize(map-get($paleta, 'secondary'), $amount: 0.6);
+			background-color: map-get($paleta, 'light');
 			margin: 1rem;
 			padding: 2rem;
 			@media only screen and (min-width: 992px){
