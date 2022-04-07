@@ -11,6 +11,18 @@
   background-color: #212a31; }
 
 /* Mixin para Flexbox */
+/* Estilo de tabla con alíneación izquierda para la 1ra columna y derecha para la 2da - Utilizado en Info y Recomendaciones */
+.table-custom table, .contenedorInfo .mainInfo #horarios table, .datosReco table {
+  font-weight: 300;
+  width: 100%;
+  border-collapse: collapse; }
+
+.table-custom tr td:first-child, .contenedorInfo .mainInfo #horarios tr td:first-child, .datosReco tr td:first-child {
+  text-align: left; }
+
+.table-custom tr td:nth-child(2), .contenedorInfo .mainInfo #horarios tr td:nth-child(2), .datosReco tr td:nth-child(2) {
+  text-align: right; }
+
 /* Google Fonts */
 /* Tamaños de texto */
 /* Estilos de texto y títulos */
@@ -153,17 +165,9 @@ ul {
     padding: 3rem;
     text-align: center; }
 
-/* Estilo de card para la página Recomendaciones */
+/* White Card: usada en la página Recomendaciones */
 .whiteCard {
   border: 0.5px solid #212a31; }
-  .whiteCard .datosReco {
-    padding-left: 0;
-    background-color: transparent;
-    text-align: left;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: 300; }
 
 /* Estilos de botones */
 .boton, .btn-grad, #botonHome, .btn-grad-reset {
@@ -250,17 +254,9 @@ ul {
     @media only screen and (min-width: 992px) {
       .contenedorInfo .mainInfo {
         padding: 0rem; } }
-    .contenedorInfo .mainInfo #horarios table {
-      font-weight: 300;
-      width: 100%;
-      border-collapse: collapse; }
     .contenedorInfo .mainInfo #horarios tr {
       height: 7rem;
       border-bottom: 0.5px solid whitesmoke; }
-      .contenedorInfo .mainInfo #horarios tr td:first-child {
-        text-align: left; }
-      .contenedorInfo .mainInfo #horarios tr td:nth-child(2) {
-        text-align: right; }
     .contenedorInfo .mainInfo #adicionales {
       padding: 0; }
   .contenedorInfo #downloads .row {
@@ -288,6 +284,25 @@ ul {
             font-size: 2.5rem; } }
         .contenedorInfo #downloads .row li a i:hover {
           transform: scale(1.1); }
+
+.datosReco {
+  padding-left: 2rem;
+  background-color: transparent;
+  text-align: left;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem; }
+  .datosReco td:first-child {
+    text-transform: uppercase; }
+  .datosReco td:nth-child(2) {
+    padding-left: 5rem; }
+  @media only screen and (max-width: 768px) {
+    .datosReco tr {
+      height: 4rem;
+      border-bottom: 1px solid whitesmoke; }
+      .datosReco tr:last-child {
+        border-bottom: 0px; } }
 
 /* Grid */
 .contenedorGreen {

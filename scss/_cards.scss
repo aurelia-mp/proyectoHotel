@@ -51,18 +51,8 @@
 			}
 	}
 
-/* Estilo de card para la página Recomendaciones */
+/* White Card: usada en la página Recomendaciones */
 .whiteCard{
 	@extend .customCard;
 	border: 0.5px solid map-get($paleta, 'main');
-	
-    .datosReco{
-        padding-left: 0;
-        background-color: transparent;
-        text-align: left;
-        padding-top: 2rem;
-        margin-top: 2rem;
-        font-size: $textSm;
-        font-weight: 300;
-    }
 }
