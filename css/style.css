@@ -293,12 +293,17 @@ ul {
 .contenedorGreen {
   display: grid;
   grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer"; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1200px) {
     .contenedorGreen {
       grid-template-areas: "nav nav" "header header" "introGreen asideGreen" "mainGreen mainGreen" "footer footer";
+      grid-template-columns: 5fr 2fr; } }
+  @media only screen and (min-width: 1400px) {
+    .contenedorGreen {
       grid-template-columns: 3fr 1fr; } }
   .contenedorGreen #introGreen {
     grid-area: introGreen; }
+    .contenedorGreen #introGreen .blackCard {
+      height: 100%; }
   .contenedorGreen .card[id="introGreen"] {
     border: 0px; }
   .contenedorGreen .mainGreen {
@@ -323,6 +328,12 @@ ul {
         margin-left: 3rem;
         margin-right: 1rem;
         margin-bottom: 0; } }
+
+/* Estilo de lista con cruces amarillas */
+.lista-green, .contenedorGreen .asideGreen {
+  list-style: disc inside url(../assets/list-icon.svg); }
+  .lista-green span, .contenedorGreen .asideGreen span {
+    padding-left: 2rem; }
 
 /* Grid */
 .contenedorContacto {

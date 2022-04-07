@@ -1,25 +1,31 @@
+
+
 /* Grid */
 .contenedorGreen{
 	display: grid;
 	grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer";
-    @media only screen and (min-width: 1024px){
+    @media only screen and (min-width: 1200px){
 		grid-template-areas: "nav nav"
 							 "header header"
 							 "introGreen asideGreen"
 							 "mainGreen mainGreen"
 							 "footer footer";
-		grid-template-columns: 3fr 1fr;
+		grid-template-columns: 5fr 2fr;
 	}
-
+    @media only screen and (min-width: 1400px){
+        grid-template-columns: 3fr 1fr;
+    }
     #introGreen{
         grid-area: introGreen;
+        .blackCard{
+            height: 100%;
+        }
     }
     .card{
         &[id="introGreen"]{
             border: 0px;
-        }
+        } 
     }
-
     .mainGreen{
         grid-area: mainGreen;
         width: 97%;
@@ -35,11 +41,10 @@
                 border:none;
                 box-shadow: 0 0 0 0.1rem transparentize(map-get($paleta, 'secondary'), $amount: 0.7);
             }
-        }
-            
+        }     
     }
-    
     .asideGreen{
+        @extend .lista-green;
         grid-area: asideGreen;
         margin-bottom: 3rem;
         border: 5px solid map-get($paleta, 'main');
@@ -52,3 +57,14 @@
         }
     }
 }
+
+/* Estilo de lista con cruces amarillas */
+
+.lista-green{
+    list-style: disc inside url(../assets/list-icon.svg);
+    span{
+        padding-left: 2rem;
+    }
+}
+
+
