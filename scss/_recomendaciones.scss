@@ -1,0 +1,24 @@
+.datosReco{
+    padding-left: 2rem;
+    background-color: transparent;
+    text-align: left;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    @include texto(300, $textSm);
+    @extend .table-custom;
+    td:first-child{
+        text-transform: uppercase;
+      }	
+    td:nth-child(2){
+        padding-left: 5rem;
+      }	
+        tr{
+        @media only screen and (max-width:768px){
+            height: 4rem;
+            border-bottom: 1px solid map-get($paleta, 'light');
+            &:last-child{
+                border-bottom: 0px;
+            }
+        }
+    }
+}

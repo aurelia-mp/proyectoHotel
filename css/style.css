@@ -7,11 +7,22 @@
   font-family: Lato, sans-serif; }
 
 /* Colores */
-/* Pendiente: transformar colores en una paleta - map */
 .bgDark {
   background-color: #212a31; }
 
 /* Mixin para Flexbox */
+/* Estilo de tabla con alíneación izquierda para la 1ra columna y derecha para la 2da - Utilizado en Info y Recomendaciones */
+.table-custom table, .contenedorInfo .mainInfo #horarios table, .datosReco table {
+  font-weight: 300;
+  width: 100%;
+  border-collapse: collapse; }
+
+.table-custom tr td:first-child, .contenedorInfo .mainInfo #horarios tr td:first-child, .datosReco tr td:first-child {
+  text-align: left; }
+
+.table-custom tr td:nth-child(2), .contenedorInfo .mainInfo #horarios tr td:nth-child(2), .datosReco tr td:nth-child(2) {
+  text-align: right; }
+
 /* Google Fonts */
 /* Tamaños de texto */
 /* Estilos de texto y títulos */
@@ -70,19 +81,23 @@ ul {
     width: 75%; }
     @media only screen and (max-width: 320px) {
       .nav .navbar-brand .logo {
-        width: 60%;
-        padding-left: 0; } }
+        width: 60%; } }
   .nav .navbar-toggler-icon {
     font-size: 2rem; }
   .nav .navbar-nav .nav-item .nav-link {
-    color: #212a31; }
+    color: #212a31;
+    padding-left: 3rem; }
     .nav .navbar-nav .nav-item .nav-link:hover {
       color: #f1bd13; }
     @media only screen and (min-width: 992px) {
       .nav .navbar-nav .nav-item .nav-link {
         font-size: 1.5rem;
         margin-left: 1rem;
-        margin-right: 1rem; } }
+        margin-right: 1rem;
+        padding-left: 0; } }
+    @media only screen and (max-width: 576px) {
+      .nav .navbar-nav .nav-item .nav-link {
+        padding-left: 0.5rem; } }
 
 .bg-blanco {
   background-color: white; }
@@ -107,7 +122,10 @@ ul {
 /* Estilos de cards */
 .customCard, .blackCard, .whiteCard {
   padding-bottom: 2rem; }
-  .customCard h2, .blackCard h2, .whiteCard h2 {
+  .customCard h2, .blackCard h2, .whiteCard h2,
+  .customCard h3,
+  .blackCard h3,
+  .whiteCard h3 {
     color: #f1bd13;
     margin-left: 2rem;
     margin-bottom: 2rem; }
@@ -125,7 +143,7 @@ ul {
   .customCard .card-footer a,
   .blackCard .card-footer a,
   .whiteCard .card-footer a {
-    color: #2aa3d7;
+    color: #1b9aaa;
     text-decoration: none; }
     .customCard .card-body a:hover, .blackCard .card-body a:hover, .whiteCard .card-body a:hover,
     .customCard .card-footer a:hover,
@@ -147,20 +165,12 @@ ul {
     padding: 3rem;
     text-align: center; }
 
-/* Estilo de card para la página Recomendaciones */
+/* White Card: usada en la página Recomendaciones */
 .whiteCard {
   border: 0.5px solid #212a31; }
-  .whiteCard .datosReco {
-    padding-left: 0;
-    background-color: transparent;
-    text-align: left;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: 300; }
 
 /* Estilos de botones */
-.boton, .btn-grad, .botonHome, .btn-grad-reset {
+.boton, .btn-grad, #botonHome, .btn-grad-reset {
   border: none;
   margin: 1rem;
   padding: 1.5rem 3rem;
@@ -168,29 +178,27 @@ ul {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  box-shadow: 0 0 20px #eee;
   border-radius: 0.3rem;
   display: inline-block;
   width: 40%;
   color: #212a31;
   white-space: normal;
   word-wrap: break-word; }
-  .boton:hover, .btn-grad:hover, .botonHome:hover, .btn-grad-reset:hover {
+  .boton:hover, .btn-grad:hover, #botonHome:hover, .btn-grad-reset:hover {
     background-position: right center;
-    /* change the direction of the change here */
     text-decoration: none;
-    font-weight: 700; }
+    transform: scale(1.05); }
 
-.btn-grad, .botonHome {
+.btn-grad, #botonHome {
   background-image: linear-gradient(to right, #f1bd13, #f8ca38 51%, #ffd753 100%); }
 
 .btn-grad-reset {
   background-image: linear-gradient(to right, #cccccc 0%, #e0e0e0 51%, whitesmoke 100%); }
 
-.botonHome {
+#botonHome {
   font-size: 3rem;
   width: 70%;
-  box-shadow: none; }
+  margin: 0; }
 
 .contenedorHome {
   display: grid;
@@ -246,21 +254,13 @@ ul {
     @media only screen and (min-width: 992px) {
       .contenedorInfo .mainInfo {
         padding: 0rem; } }
-    .contenedorInfo .mainInfo #horarios table {
-      font-weight: 300;
-      width: 100%;
-      border-collapse: collapse; }
     .contenedorInfo .mainInfo #horarios tr {
       height: 7rem;
       border-bottom: 0.5px solid whitesmoke; }
-      .contenedorInfo .mainInfo #horarios tr td:first-child {
-        text-align: left; }
-      .contenedorInfo .mainInfo #horarios tr td:nth-child(2) {
-        text-align: right; }
     .contenedorInfo .mainInfo #adicionales {
       padding: 0; }
   .contenedorInfo #downloads .row {
-    background-color: rgba(241, 189, 19, 0.4);
+    background-color: whitesmoke;
     margin: 1rem;
     padding: 2rem; }
     @media only screen and (min-width: 992px) {
@@ -285,16 +285,40 @@ ul {
         .contenedorInfo #downloads .row li a i:hover {
           transform: scale(1.1); }
 
+.datosReco {
+  padding-left: 2rem;
+  background-color: transparent;
+  text-align: left;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem; }
+  .datosReco td:first-child {
+    text-transform: uppercase; }
+  .datosReco td:nth-child(2) {
+    padding-left: 5rem; }
+  @media only screen and (max-width: 768px) {
+    .datosReco tr {
+      height: 4rem;
+      border-bottom: 1px solid whitesmoke; }
+      .datosReco tr:last-child {
+        border-bottom: 0px; } }
+
 /* Grid */
 .contenedorGreen {
   display: grid;
   grid-template-areas: "nav" "header" "introGreen" "mainGreen" "asideGreen" "footer"; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1200px) {
     .contenedorGreen {
       grid-template-areas: "nav nav" "header header" "introGreen asideGreen" "mainGreen mainGreen" "footer footer";
+      grid-template-columns: 5fr 2fr; } }
+  @media only screen and (min-width: 1400px) {
+    .contenedorGreen {
       grid-template-columns: 3fr 1fr; } }
   .contenedorGreen #introGreen {
     grid-area: introGreen; }
+    .contenedorGreen #introGreen .blackCard {
+      height: 100%; }
   .contenedorGreen .card[id="introGreen"] {
     border: 0px; }
   .contenedorGreen .mainGreen {
@@ -319,6 +343,12 @@ ul {
         margin-left: 3rem;
         margin-right: 1rem;
         margin-bottom: 0; } }
+
+/* Estilo de lista con cruces amarillas */
+.lista-green, .contenedorGreen .asideGreen {
+  list-style: disc inside url(../assets/list-icon.svg); }
+  .lista-green span, .contenedorGreen .asideGreen span {
+    padding-left: 2rem; }
 
 /* Grid */
 .contenedorContacto {

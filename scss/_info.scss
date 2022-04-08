@@ -7,21 +7,10 @@
 		margin:0;
 		/* Estilo de tabla de Horarios */
 		#horarios{
-			table{
-				font-weight: 300;
-				width: 100%;
-				border-collapse: collapse;
-			}
-		
+			@extend .table-custom;		
 			tr{
 				height: 7rem;
 				border-bottom: 0.5px solid map-get($paleta, 'light');
-				td:first-child{
-					text-align: left;
-				}
-				td:nth-child(2){
-					text-align: right;
-				}
 			}
 		}
 
@@ -34,8 +23,8 @@
 	/* Estilos de la sección Downloads */
 	#downloads {
 		.row{
-			background-color: transparentize(map-get($paleta, 'secondary'), $amount: 0.6);
-			// background-color: #fdf8e7;
+			// background-color: transparentize(map-get($paleta, 'secondary'), $amount: 0.6);
+			background-color: map-get($paleta, 'light');
 			margin: 1rem;
 			padding: 2rem;
 			@media only screen and (min-width: 992px){
