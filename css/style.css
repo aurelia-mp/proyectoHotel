@@ -420,6 +420,11 @@ ul {
   @media only screen and (min-width: 1024px) {
     .footer {
       margin-top: 3rem; } }
+  .footer div i:first-child {
+    margin-right: 1rem; }
+  .footer div span {
+    text-transform: uppercase;
+    margin: 0 0.8rem; }
   .footer .redes {
     margin-top: 1rem; }
     .footer .redes a i {
