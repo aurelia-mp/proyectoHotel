@@ -1,11 +1,11 @@
+/* Estilo específico para los datos prácticos -- Estilo general en Commons */
 .datosReco{
+    @extend .table-custom;
     padding-left: 2rem;
-    background-color: transparent;
-    text-align: left;
     padding-top: 2rem;
     margin-top: 2rem;
-    @include texto(300, $textSm);
-    @extend .table-custom;
+    background-color: transparent;
+    font-size: $textSm;
     td:first-child{
         text-transform: uppercase;
       }	
@@ -13,12 +13,10 @@
         padding-left: 5rem;
       }	
         tr{
-        @media only screen and (max-width:768px){
-            height: 4rem;
             border-bottom: 1px solid map-get($paleta, 'light');
+            height: 6rem;
             &:last-child{
                 border-bottom: 0px;
             }
-        }
     }
 }

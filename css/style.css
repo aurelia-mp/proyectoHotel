@@ -187,7 +187,7 @@ ul {
   .boton:hover, .btn-grad:hover, #botonHome:hover, .btn-grad-reset:hover {
     background-position: right center;
     text-decoration: none;
-    transform: scale(1.05); }
+    transform: scale(1.03); }
 
 .btn-grad, #botonHome {
   background-image: linear-gradient(to right, #f1bd13, #f8ca38 51%, #ffd753 100%); }
@@ -285,24 +285,22 @@ ul {
         .contenedorInfo #downloads .row li a i:hover {
           transform: scale(1.1); }
 
+/* Estilo específico para los datos prácticos -- Estilo general en Commons */
 .datosReco {
   padding-left: 2rem;
-  background-color: transparent;
-  text-align: left;
   padding-top: 2rem;
   margin-top: 2rem;
-  font-weight: 300;
+  background-color: transparent;
   font-size: 1.5rem; }
   .datosReco td:first-child {
     text-transform: uppercase; }
   .datosReco td:nth-child(2) {
     padding-left: 5rem; }
-  @media only screen and (max-width: 768px) {
-    .datosReco tr {
-      height: 4rem;
-      border-bottom: 1px solid whitesmoke; }
-      .datosReco tr:last-child {
-        border-bottom: 0px; } }
+  .datosReco tr {
+    border-bottom: 1px solid whitesmoke;
+    height: 6rem; }
+    .datosReco tr:last-child {
+      border-bottom: 0px; }
 
 /* Grid */
 .contenedorGreen {
@@ -401,10 +399,11 @@ ul {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 0;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  /* Footer en una sola línea para pantallas de mayores dimensiones */
+  /* Estilo específico para el footer de la homepage */ }
   @media only screen and (min-width: 768px) {
     .footer {
-      /* Footer en una sola línea */
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -413,16 +412,6 @@ ul {
   @media only screen and (min-width: 1024px) {
     .footer {
       margin-top: 3rem; } }
-  .footer[id="footerHome"] {
-    height: 90px;
-    width: 100%;
-    position: absolute;
-    bottom: 0; }
-    @media only screen and (min-width: 1024px) {
-      .footer[id="footerHome"] {
-        height: 50px; } }
-    .footer[id="footerHome"] .wifi {
-      margin-left: 3rem; }
   .footer .redes {
     margin-top: 1rem; }
     .footer .redes a i {
@@ -436,3 +425,13 @@ ul {
       height: 14px; }
       .footer .redes a img:hover {
         transform: scale(1.3); }
+  .footer[id="footerHome"] {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    @media only screen and (min-width: 1024px) {
+      .footer[id="footerHome"] {
+        height: 50px; } }
+    .footer[id="footerHome"] .wifi {
+      margin-left: 3rem; }
