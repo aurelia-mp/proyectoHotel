@@ -31,9 +31,16 @@
 		font-size: $textSm;
 		font-weight: 300;
 	}
-	
 	textarea{
 		height: 15vh;
+	}
+	#contacto-botones{
+		button{
+			width: 100%;
+		}
+		@media only screen and (max-width: 450px) {
+			@include flex(column, center, center);
+		}
 	}
 }
 

@@ -379,6 +379,14 @@ ul {
     font-weight: 300; }
   .mainContacto textarea {
     height: 15vh; }
+  .mainContacto #contacto-botones button {
+    width: 100%; }
+  @media only screen and (max-width: 450px) {
+    .mainContacto #contacto-botones {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 /* Mapa */
 .mapa {
