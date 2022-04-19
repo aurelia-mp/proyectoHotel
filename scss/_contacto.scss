@@ -36,10 +36,11 @@
 	}
 	#contacto-botones{
 		button{
-			width: 100%;
-		}
-		@media only screen and (max-width: 450px) {
-			@include flex(column, center, center);
+			@media only screen and (max-width: 450px) {
+				width: 100%;
+				margin-top: 1rem;
+				@include flex(row, center, center);
+			}
 		}
 	}
 }

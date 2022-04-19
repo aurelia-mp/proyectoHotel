@@ -1,7 +1,6 @@
   /* Estilos de botones */
   .boton{
     border: none;
-    margin: 1rem;
     padding: 1.5rem 3rem;
     text-align: center;
     text-transform: uppercase;
@@ -9,7 +8,7 @@
     background-size: 200% auto;         
     border-radius: 0.3rem;
     display: inline-block;
-    width: 40%;
+    width: 45%;
     color: map-get($paleta, 'main'); 
     white-space: normal;
     word-wrap: break-word;

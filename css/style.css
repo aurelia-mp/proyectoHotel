@@ -172,7 +172,6 @@ ul {
 /* Estilos de botones */
 .boton, .btn-grad, #botonHome, .btn-grad-reset {
   border: none;
-  margin: 1rem;
   padding: 1.5rem 3rem;
   text-align: center;
   text-transform: uppercase;
@@ -180,7 +179,7 @@ ul {
   background-size: 200% auto;
   border-radius: 0.3rem;
   display: inline-block;
-  width: 40%;
+  width: 45%;
   color: #212a31;
   white-space: normal;
   word-wrap: break-word; }
@@ -379,12 +378,12 @@ ul {
     font-weight: 300; }
   .mainContacto textarea {
     height: 15vh; }
-  .mainContacto #contacto-botones button {
-    width: 100%; }
   @media only screen and (max-width: 450px) {
-    .mainContacto #contacto-botones {
+    .mainContacto #contacto-botones button {
+      width: 100%;
+      margin-top: 1rem;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center; } }
 
@@ -448,3 +447,20 @@ ul {
         height: 50px; } }
     .footer[id="footerHome"] .wifi {
       margin-left: 3rem; }
+
+.contenedor404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 82vh; }
+  .contenedor404 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedor404 header img {
+      margin: 3rem; }
+  .contenedor404 main a {
+    color: #1b9aaa; }
