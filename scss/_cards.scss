@@ -14,11 +14,17 @@
 		transform: scale(1.03);
 		transition: all 0.5s;
 	  }
+	  @media only screen and (max-width: 450px){
+		  padding: 0.5rem;
+	  }
 	}
 	.card-body,
 	.card-footer{
 		p{
 			margin: auto 2rem;
+			@media only screen and (max-width: 450px){
+				margin: 0;
+			}
 		}
 		a{
 			color: map-get($paleta, 'link');

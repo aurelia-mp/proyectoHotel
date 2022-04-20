@@ -2,13 +2,14 @@
 	display: grid;
 	grid-template-areas: "nav" "mainHome" "footer";
 	background-image: url(../assets/entrada-vertical.jpg);
-	background-position: center 70%;
+	background-position: center 60%;
 	background-repeat: no-repeat;
 	height: 100vh;
 	@media only screen and (min-width: 1024px){
 		background-image: url(../assets/entrada-horizontal.jpg);
 		background-size: cover;
 		background-position: center 20%;
+		heigth: 100vh;
 	}
 }
 
@@ -16,9 +17,10 @@
 	grid-area: mainHome;
 	.homeTitle{
 		position: relative;
-		top: 35%;
+		top: 25%;
 		background-color: transparentize(map-get($paleta, 'light'), $amount: 0.5);
 		text-align: center;
+		padding-bottom: 2rem;
 		@media only screen and (min-width: 1024px){
 			position: relative;
 			top: 0;

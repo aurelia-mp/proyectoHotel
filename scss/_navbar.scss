@@ -1,5 +1,4 @@
 /* Estilos de la barra de navegación */
-
 .nav {
     grid-area: nav; 
     .navbar-brand{
@@ -12,6 +11,9 @@
     }
     .navbar-toggler-icon {
       font-size: $textMd; 
+      @media only screen and (max-width: 320px){
+        font-size: $textSm;
+      }
     }
     .navbar-nav{ 
       .nav-item{

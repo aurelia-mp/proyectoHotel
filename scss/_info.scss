@@ -12,6 +12,9 @@
 				height: 7rem;
 				border-bottom: 0.5px solid map-get($paleta, 'light');
 			}
+			@media only screen and (max-width: 400px){
+				font-size: 1.5rem;
+			}
 		}
 
 		/* Sacando padding a la última fila - Servicios Adicionales */
